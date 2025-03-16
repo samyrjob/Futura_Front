@@ -1,0 +1,21 @@
+<p>new-users works!</p>
+<p> wins :  {{score?.wins}}</p>
+<p> wins :  {{score?.losses}}</p>
+<p> wins :  {{score?.ties}}</p>
+
+
+<h3>Here are the new users to the platform, congratulations ! </h3>
+<!-- 
+<p>Utilisateurs: {{ utilisators | json }}</p> -->
+
+
+  <table *ngFor="let utilisateur of utilisators">
+    <tr >
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>{{ utilisateur.username }}</td>
+      <td>{{ utilisateur.email }}</td>
+    </tr>
+  </table>

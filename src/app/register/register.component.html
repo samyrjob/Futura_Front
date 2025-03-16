@@ -1,0 +1,31 @@
+<p>REGISTER NOW!</p>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <label for="username">Username</label>
+    <input id="username" formControlName="username" type="text">
+    <div *ngIf="registerForm.controls['username'].invalid && registerForm.controls['username'].touched">
+      Username is required and must be at least 3 characters.
+    </div>
+  
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email">
+    <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched">
+      Enter a valid email.
+    </div>
+  
+    <label for="password">Password</label>
+    <input id="password" formControlName="password" type="password">
+    <div *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched">
+      Password must be at least 6 characters.
+    </div>
+  
+    <label for="confirmPassword">Confirm Password</label>
+    <input id="confirmPassword" formControlName="confirmPassword" type="password">
+    <div *ngIf="registerForm.hasError('mismatch')">
+      Passwords do not match.
+    </div>
+  
+    <button type="submit" [disabled]="registerForm.invalid">Register</button>
+
+    <div *ngIf="errorMessage"> {{errorMessage}}</div>
+  </form>
+  

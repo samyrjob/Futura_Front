@@ -1,0 +1,17 @@
+<p>Login PAGE</p>
+<form [formGroup]="logInForm" (ngSubmit)="submit()">
+    <label for="username">Username</label>
+    <input id="username" formControlName="username" type="text">
+  
+    <label for="password">Password</label>
+    <input id="password" formControlName="password" type="password">
+
+
+    <button type="submit" [disabled]="logInForm.invalid" >Login</button>
+
+    <p *ngIf="errorMessage" style="color: red;">
+        ❌ {{ errorMessage }}
+    </p>
+
+
+  </form>
