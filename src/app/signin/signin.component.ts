@@ -54,12 +54,6 @@ export class SigninComponent {
         (response) => {
           // Success: handle successful login, for example, navigate to another page
           console.log('Login successful', response);
-          //^ store in localStorage variable :
-          localStorage.setItem("JWT_token", response.accessToken);
-          const yeah = localStorage.getItem("JWT_token");
-
-          console.log(yeah)
-
             // Navigate to the dashboard after successful login
           this.router.navigate(['/profile']);
 
