@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
+import { ApiService } from './shared/api.service';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Component({
   selector: 'app-root',
@@ -13,13 +15,23 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+
+export class AppComponent{
   title = 'Welcome to Futura';
 
-  // ngOnInit(): void {
-  //   const fontSize = getComputedStyle(document.documentElement).fontSize;
-  //   console.log(fontSize);  // Logs the font size of the root element
-  // }
+  constructor(private router: Router, private apiService: ApiService, private jwtHelper: JwtHelperService) {}
+
+  ngOnInit() {
+
+    // this.apiService.validateUserToken().subscribe( response => {
+    //   if (!response.authenticated){
+    //     this.router.navigate(['/sign_in'])
+    //   }
+    // }
+    // )
+
+    console.log("al hamdoulilah");
+  }
 
 }
 

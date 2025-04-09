@@ -3,5 +3,13 @@
 <!-- Home link -->
 <a routerLink="/">Home</a>
 <br><br>
+<h3>Disconnect : </h3>
+<button (click)="logout()">Log Out button</button>
 <!-- About link -->
 <a routerLink="/about">About</a>
+
+
+<div *ngIf="username">
+    <h1>Welcome, {{ username.username }}!</h1>
+    <!-- <p>Email: {{ username.email }}</p> -->
+  </div>
