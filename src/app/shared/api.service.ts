@@ -1,5 +1,5 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
-import { HttpClient, HttpParameterCodec } from '@angular/common/http';
+import { HttpClient, HttpParameterCodec, HttpResponse } from '@angular/common/http';
 import { catchError, map, Observable, of, tap, throwError } from 'rxjs';
 import { LoginRequestDTO } from '../model/LoginRequestDTO';
 import {Utilisator} from '../model/Utilisator';
@@ -32,18 +32,19 @@ apiUrl: string = environment.apiBaseUrl;
 
 
 
-  DoLogIn(credentials: LoginRequestDTO): Observable<any>{
+
+  DoLogIn(credentials: LoginRequestDTO): Observable<any> {
     return this.http.post(this.logIn, credentials, {
-      responseType:'json',
-      withCredentials: true
+        responseType: 'json',
+        observe: 'response' // Get full response
     }).pipe(
-      tap(() => {
-        // Delay navigation to ensure cookie is set
-        setTimeout(() => this.router.navigate(['/profile']), 100);
-      })
+        tap((response: HttpResponse<any>) => {
+            if (response.status === 200) {
+                this.router.navigate(['/profile']);
+            }
+        })
     );
-  
-  }
+}
 
 
 
@@ -67,7 +68,7 @@ apiUrl: string = environment.apiBaseUrl;
 
 
     validateUserToken(): Observable<any> {
-      return this.http.get<{ user: any, authenticated: boolean }>(this.userAndValidationToken, { withCredentials: true })
+      return this.http.get<{ user: any, authenticated: boolean }>(this.userAndValidationToken)
     }
 
 
@@ -83,7 +84,6 @@ apiUrl: string = environment.apiBaseUrl;
 
     logout(): Observable<void> {
       return this.http.post<void>(this.logOut, {}, { 
-        withCredentials: true 
       }).pipe(
         tap(() => {
           this.router.navigate(['/sign_in']);

@@ -13,13 +13,11 @@ export class AuthInterceptor implements HttpInterceptor {
   constructor(private router: Router, private apiService: ApiService) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    // Skip interception for auth-related endpoints
-    if (req.url.includes('login') || 
-        req.url.includes('logout') || 
-        req.url.includes('validate-token')) {
-      return next.handle(req);
-    }
 
+
+    // if (req.url.includes("login") || req.url.includes("logout")){
+    //     return next.handle(req);
+    // }
     const authReq = req.clone({ withCredentials: true });
 
     return next.handle(authReq).pipe(
