@@ -68,7 +68,7 @@ apiUrl: string = environment.apiBaseUrl;
 
 
     validateUserToken(): Observable<any> {
-      return this.http.get<{ user: any, authenticated: boolean }>(this.userAndValidationToken)
+      return this.http.get<{ user: Utilisator, authenticated: boolean }>(this.userAndValidationToken)
     }
 
 
