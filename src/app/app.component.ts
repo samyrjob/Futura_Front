@@ -35,6 +35,7 @@ export class AppComponent{
     error: (err: any) => {
       console.error('Error validating token', err);
     },
+    //! Complete () automatically unsubscribes the Observable !//
     complete: () => {
       // Optional completion handler
       console.log('Observation completed');
@@ -46,7 +47,7 @@ export class AppComponent{
   ngOnInit() {
 
     this.isUserLoggedIn().subscribe(this.observer);
-    console.log("al hamdoulilah");
+    console.log("log is working");
   }
 
 
@@ -57,7 +58,8 @@ export class AppComponent{
       return this.apiService.validateUserToken().pipe(
         map(response => response.authenticated ?? false), // Extract the "authenticated" field here //^ ?? corresponds to use of nullish coalescing operator
         catchError(error => { 
-           console.error("token validation failed", error);
+          //* We hide the console log for the user experience
+          //  console.error("[FROM APP COMPONENT]token validation failed", error + "  ...");
            return of(false);
           } // return Observable<false> 
         )
@@ -74,6 +76,8 @@ export class AppComponent{
   @HostListener('document:scroll')
   @HostListener('document:touchstart')
   resetInactivityTimer(){
+  
+
     clearTimeout(this.inactivityTimeout);
     this.inactivityTimeout = setTimeout(() => this.handleInactivityLogout(), this.INACTIVITY_LIMIT);
   }
@@ -81,6 +85,7 @@ export class AppComponent{
 
   // //* When inactivity is detected, call backend to log out 
   handleInactivityLogout(){
+
     this.apiService.logout().subscribe({
       next: () => {
         console.log('Logged out due to inactivity');

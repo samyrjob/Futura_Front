@@ -1,8 +1,9 @@
 import { Injectable } from "@angular/core";
-import { catchError, finalize, Observable, switchMap, throwError } from "rxjs";
+import { catchError, EMPTY, finalize, Observable, switchMap, throwError } from "rxjs";
 import { HttpInterceptor, HttpEvent, HttpRequest, HttpHandler, HttpErrorResponse } from "@angular/common/http";
 import { Router } from "@angular/router";
 import { ApiService } from "../shared/api.service";
+// import { MatSnackBar } from '@angular/material/snack-bar'; // Or your notification service
 
 
 
@@ -15,9 +16,6 @@ export class AuthInterceptor implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
 
-    // if (req.url.includes("login") || req.url.includes("logout")){
-    //     return next.handle(req);
-    // }
     const authReq = req.clone({ withCredentials: true });
 
     return next.handle(authReq).pipe(
@@ -41,11 +39,16 @@ export class AuthInterceptor implements HttpInterceptor {
         }),
         catchError(() => {
           this.router.navigate(['/sign_in']);
-          return throwError(() => new Error('Session expired'));
+          return throwError(() => new Error('Session expired hagla 1'));
         }),
-        switchMap(() => throwError(() => new Error('Session expired')))
+        switchMap(() => throwError(() => new Error('Session expired hagla 2')))
       );
     }
-    return throwError(() => new Error('Session expired'));
+    //* Completes the Observable without emitting anything
+    return EMPTY; 
+    // return this.snackBar.open('Session expired. Redirecting to login...', 'Dismiss', {
+    //   duration: 3000,
+    // });
+    // return throwError(() => new Error('Session expired hagla 3'));
   }
 }
