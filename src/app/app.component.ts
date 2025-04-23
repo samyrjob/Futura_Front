@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { ApiService } from './shared/api.service';
@@ -17,16 +17,21 @@ import { catchError, map, Observable, Observer, of } from 'rxjs';
   styleUrl: './app.component.scss'
 })
 
+
+
 export class AppComponent{
   title = 'Welcome to Futura';
   inactivityTimeout: any;
   readonly INACTIVITY_LIMIT = 1*60*1000; // 1 minute
+  displayconsole: any;
 
 
   //* Defining the Observer observer : 
   readonly observer: Observer<boolean> = {
     next: (authenticated: boolean) => {
+
       if (authenticated) {
+        console.log("User is connected");
         this.resetInactivityTimer();
       } else {
         console.log("User is not connected");
@@ -57,9 +62,10 @@ export class AppComponent{
     isUserLoggedIn(): Observable<boolean> {
       return this.apiService.validateUserToken().pipe(
         map(response => response.authenticated ?? false), // Extract the "authenticated" field here //^ ?? corresponds to use of nullish coalescing operator
-        catchError(error => { 
+        catchError(error => {
           //* We hide the console log for the user experience
           //  console.error("[FROM APP COMPONENT]token validation failed", error + "  ...");
+
            return of(false);
           } // return Observable<false> 
         )
