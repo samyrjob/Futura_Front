@@ -32,3 +32,5 @@
   
   // Optional: If you want to globally apply font-family or box-sizing styles, you can also put them here
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

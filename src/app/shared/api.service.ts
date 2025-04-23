@@ -74,6 +74,7 @@ apiUrl: string = environment.apiBaseUrl;
 
 
 
+
     getUser(): Observable<Utilisator>{
       return this.validateUserToken().pipe(
         map(response => response.user)
