@@ -1,68 +1,40 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
-import { ApiService } from '../shared/api.service';
-import { RouterModule } from '@angular/router';
-import { Router } from '@angular/router';
-
-
-
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';  // For reactive forms
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  // Required for animations
 
 @Component({
   selector: 'app-signin',
-  standalone: true,
-  imports: [CommonModule,ReactiveFormsModule, FormsModule, RouterModule],
   templateUrl: './signin.component.html',
-  styleUrl: './signin.component.scss'
+  styleUrls: ['./signin.component.scss']
 })
+export class SigninComponent implements OnInit {
+  signinForm: FormGroup;
+  hidePassword: boolean = true;
 
+  constructor(private fb: FormBuilder) {}
 
-
-
-export class SigninComponent {
-
-  logInForm: FormGroup;
-  errorMessage: string = '';
-
-
-
-  // For testing purpose
-  private userDatabase: { [key: string]: string} = {
-    john: "123",
-    rocky: "456",
-    damien: "789"
+  ngOnInit(): void {
+    this.signinForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required]],
+      rememberMe: [false]
+    });
   }
 
-
-
-  constructor(private fb: FormBuilder, private apiService: ApiService, private router: Router){
-    this.logInForm = this.fb.group(
-      {
-        username: ['', [Validators.required]],
-        password: ['', [Validators.required]]
-      })
-  }
-
-
-  
-    submit() {
-
-      const { username, password } = this.logInForm.value;
-
-      this.apiService.DoLogIn({username, password}).subscribe(
-        (response) => {
-          // Success: handle successful login, for example, navigate to another page
-          console.log('Login successful', response);
-            // Navigate to the dashboard after successful login
-          this.router.navigate(['/profile']);
-
-        },
-        (error) => {
-          // Error: display an error message if login failed
-          this.errorMessage = 'Invalid username or password';
-          console.error('Login failed', error);
-        }
-      );
+  onSubmit(): void {
+    if (this.signinForm.valid) {
+      console.log(this.signinForm.value);
     }
+  }
+
+  togglePasswordVisibility(): void {
+    this.hidePassword = !this.hidePassword;
+  }
 }
