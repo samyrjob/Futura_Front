@@ -5,7 +5,7 @@ import { ApiService } from './shared/api.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { catchError, map, Observable, Observer, of } from 'rxjs';
 import { AppState } from './app.state';
-import { Store } from '@ngrx/store';
+import { Store, StoreModule } from '@ngrx/store';
 import { AuthState } from './authentication/AuthState';
 import { selectisAuthenticated, selectUsername } from './authentication/auth.selectors';
 import { login, logout } from './authentication/auth.actions';
@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 //   <h1>Angular Standalone App</h1>
 //   <router-outlet></router-outlet>
 // `,
-  imports: [ RouterOutlet, RouterModule, CommonModule],
+  imports: [ RouterOutlet, RouterModule, CommonModule, StoreModule],
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

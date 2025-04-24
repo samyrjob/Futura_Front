@@ -4,10 +4,7 @@ import { provideStore } from '@ngrx/store';
 import { appReducer } from './app/app.reducer';
 import { appConfig } from './app/app.config';
 
-bootstrapApplication(AppComponent, {
-  ...appConfig,
-  providers: [...(appConfig.providers || []), provideStore(appReducer)],
-}).catch((err) => console.error(err));
+bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
 
 
 
