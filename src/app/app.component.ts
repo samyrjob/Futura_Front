@@ -4,6 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { ApiService } from './shared/api.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { catchError, map, Observable, Observer, of } from 'rxjs';
+import { AppState } from './app.state';
+import { Store } from '@ngrx/store';
+import { AuthState } from './authentication/AuthState';
+import { selectisAuthenticated, selectUsername } from './authentication/auth.selectors';
+import { login, logout } from './authentication/auth.actions';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +17,7 @@ import { catchError, map, Observable, Observer, of } from 'rxjs';
 //   <h1>Angular Standalone App</h1>
 //   <router-outlet></router-outlet>
 // `,
-  imports: [ RouterOutlet, RouterModule],
+  imports: [ RouterOutlet, RouterModule, CommonModule],
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -26,32 +32,54 @@ export class AppComponent{
   displayconsole: any;
 
 
+  isAuthenticated$!: Observable<boolean>;
+  username$!: Observable<string | null>;
+
+
   //* Defining the Observer observer : 
-  readonly observer: Observer<boolean> = {
-    next: (authenticated: boolean) => {
+  // readonly observer: Observer<boolean> = {
+  //   next: (authenticated: boolean) => {
 
-      if (authenticated) {
-        console.log("User is connected");
-        this.resetInactivityTimer();
-      } else {
-        console.log("User is not connected");
-      }
-    },
-    error: (err: any) => {
-      console.error('Error validating token', err);
-    },
-    //! Complete () automatically unsubscribes the Observable !//
-    complete: () => {
-      // Optional completion handler
-      console.log('Observation completed');
+  //     if (authenticated) {
+  //       console.log("User is connected");
+  //       this.resetInactivityTimer();
+  //     } else {
+  //       console.log("User is not connected");
+  //     }
+  //   },
+  //   error: (err: any) => {
+  //     console.error('Error validating token', err);
+  //   },
+  //   //! Complete () automatically unsubscribes the Observable !//
+  //   complete: () => {
+  //     // Optional completion handler
+  //     console.log('Observation completed');
+  //   }
+  // };
+
+  constructor(private router: Router, private apiService: ApiService, private jwtHelper: JwtHelperService,
+     private store: Store<AppState>
+    ) {
+
+    this.isAuthenticated$ = this.store.select(selectisAuthenticated);
+    this.username$ = this.store.select(selectUsername);
+  }
+
+  loginUser() {
+    const name = prompt("Enter your username:");
+    if (name){
+      this.store.dispatch(login({username: name.trim() }));
     }
-  };
+  }
 
-  constructor(private router: Router, private apiService: ApiService, private jwtHelper: JwtHelperService) {}
+  logoutUser(){
+    this.store.dispatch(logout());
+  }
+      
 
   ngOnInit() {
 
-    this.isUserLoggedIn().subscribe(this.observer);
+    // this.isUserLoggedIn().subscribe(this.observer);
     console.log("log is working");
   }
 
@@ -76,33 +104,33 @@ export class AppComponent{
 
 
 
-  @HostListener('document:mousemove')
-  @HostListener('document:keydown')
-  @HostListener('document:click')
-  @HostListener('document:scroll')
-  @HostListener('document:touchstart')
-  resetInactivityTimer(){
+  // @HostListener('document:mousemove')
+  // @HostListener('document:keydown')
+  // @HostListener('document:click')
+  // @HostListener('document:scroll')
+  // @HostListener('document:touchstart')
+  // resetInactivityTimer(){
   
 
-    clearTimeout(this.inactivityTimeout);
-    this.inactivityTimeout = setTimeout(() => this.handleInactivityLogout(), this.INACTIVITY_LIMIT);
-  }
+  //   clearTimeout(this.inactivityTimeout);
+  //   this.inactivityTimeout = setTimeout(() => this.handleInactivityLogout(), this.INACTIVITY_LIMIT);
+  // }
 
 
-  // //* When inactivity is detected, call backend to log out 
-  handleInactivityLogout(){
+  // // //* When inactivity is detected, call backend to log out 
+  // handleInactivityLogout(){
 
-    this.apiService.logout().subscribe({
-      next: () => {
-        console.log('Logged out due to inactivity');
-        this.router.navigate(['/sign_in']); // redirect to login
-      },
-      error: (err) => {
-        console.error('Inactivity logout failed:', err);
-        this.router.navigate(['/sign_in']); // fallback redirect anyway
-      }
-    });
-  }
+  //   this.apiService.logout().subscribe({
+  //     next: () => {
+  //       console.log('Logged out due to inactivity');
+  //       this.router.navigate(['/sign_in']); // redirect to login
+  //     },
+  //     error: (err) => {
+  //       console.error('Inactivity logout failed:', err);
+  //       this.router.navigate(['/sign_in']); // fallback redirect anyway
+  //     }
+  //   });
+  // }
 
 }
 

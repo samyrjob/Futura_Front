@@ -6,8 +6,6 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { AuthInterceptor } from './authentication/auth.interceptor';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
-
-
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }),
       provideRouter(routes),

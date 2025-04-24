@@ -1,17 +1,41 @@
-<p>Login PAGE</p>
-<form [formGroup]="logInForm" (ngSubmit)="submit()">
-    <label for="username">Username</label>
-    <input id="username" formControlName="username" type="text">
-  
-    <label for="password">Password</label>
-    <input id="password" formControlName="password" type="password">
+<div class="signin-container">
+  <!-- Ensure all Angular expressions or bindings are properly closed -->
+  <mat-card class="signin-card">
+    <mat-card-title>Sign In</mat-card-title>
 
+    <!-- Form -->
+    <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+      
+      <!-- Email Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email" placeholder="Enter your email">
+        <mat-error *ngIf="signinForm.get('email')?.invalid && signinForm.get('email')?.touched">
+          Please enter a valid email address
+        </mat-error>
+      </mat-form-field>
 
-    <button type="submit" [disabled]="logInForm.invalid" >Login</button>
+      <!-- Password Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" placeholder="Enter your password">
+        <button mat-icon-button matSuffix type="button" (click)="togglePasswordVisibility()">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error *ngIf="signinForm.get('password')?.invalid && signinForm.get('password')?.touched">
+          Password is required
+        </mat-error>
+      </mat-form-field>
 
-    <p *ngIf="errorMessage" style="color: red;">
-        ❌ {{ errorMessage }}
-    </p>
+      <!-- Remember Me Checkbox -->
+      <mat-checkbox formControlName="rememberMe">Remember Me</mat-checkbox>
 
+      <!-- Actions -->
+      <div class="actions">
+        <a href="#">Forgot password?</a>
+        <button mat-flat-button color="primary" type="submit" [disabled]="signinForm.invalid">Sign In</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
 
-  </form>

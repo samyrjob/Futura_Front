@@ -1,56 +1,61 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { ApiService } from '../shared/api.service';
-import { RouterModule } from '@angular/router';
-import { Router } from '@angular/router';
-
-
-
+import { Router, RouterModule } from '@angular/router';
+import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';  // For reactive forms
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  // Required for animations
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-signin',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule, FormsModule, RouterModule],
   templateUrl: './signin.component.html',
-  styleUrl: './signin.component.scss'
+  styleUrls: ['./signin.component.scss'],
+  imports: [
+    ReactiveFormsModule,
+    MatCardModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    // BrowserAnimationsModule,
+    CommonModule,ReactiveFormsModule, FormsModule, RouterModule
+  ]
 })
-
-
-
-
 export class SigninComponent {
 
-  logInForm: FormGroup;
-  errorMessage: string = '';
 
-
-
-  // For testing purpose
-  private userDatabase: { [key: string]: string} = {
-    john: "123",
-    rocky: "456",
-    damien: "789"
-  }
-
-
+togglePasswordVisibility() {
+  this.hidePassword = !this.hidePassword;
+}
+  signinForm!: FormGroup;
+  hidePassword: boolean = true;
+  errorMessage: string | null = null;
 
   constructor(private fb: FormBuilder, private apiService: ApiService, private router: Router){
-    this.logInForm = this.fb.group(
-      {
-        username: ['', [Validators.required]],
-        password: ['', [Validators.required]]
-      })
+    
+  }
+  
+  ngOnInit(): void {
+    this.signinForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required]],
+      rememberMe: [false]
+    });
   }
 
-
   
-    submit() {
+    onSubmit() {
+      const { email, password } = this.signinForm.value;
 
-      const { username, password } = this.logInForm.value;
-
-      this.apiService.DoLogIn({username, password}).subscribe(
+      this.apiService.DoLogIn({email, password}).subscribe(
         (response) => {
           // Success: handle successful login, for example, navigate to another page
           console.log('Login successful', response);
