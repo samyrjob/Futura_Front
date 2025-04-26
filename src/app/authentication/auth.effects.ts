@@ -6,7 +6,7 @@ import { catchError, map, mergeMap, tap } from 'rxjs/operators';
 import { EMPTY, of } from 'rxjs';
 import { Router } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
-import { Utilisator } from '../model/Utilisator';
+import { UtilisatorDTO } from '../model/UtilisatorDTO';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable()
@@ -35,8 +35,8 @@ loginFailure$;
             mergeMap(({ email, password }) =>
               this.apiService.DoLogIn({ email, password }).pipe(
                 map(response => {
-                  const token = response.body.accessToken;
-                  const user = jwtDecode(token) as Utilisator;
+                  const user = response.body.user as UtilisatorDTO;
+                  console.log("eee")
                   return loginSuccess({ user });
                 }),
                 catchError((error) => 

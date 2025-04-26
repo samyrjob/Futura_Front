@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
 import { logout } from '../authentication/auth.actions';
+import { Observable } from 'rxjs';
+import { selectIsAuthenticated, selectUsername } from '../authentication/auth.selectors';
 
 
 @Component({
@@ -19,13 +21,25 @@ export class ProfileComponent implements OnInit{
   username: any;
   message: string='';
 
-  constructor(private apiService: ApiService, private router: Router, private store: Store<AppState>) {}
+  isAuthenticated$: Observable<boolean>;
+  username$: Observable<string | null>;
+
+  constructor(private apiService: ApiService, private router: Router, private store: Store<AppState>) {
+
+    
+    this.isAuthenticated$ = this.store.select(selectIsAuthenticated);
+    this.username$ = this.store.select(selectUsername);
+  }
   
+
+
   ngOnInit() {
-    // Extract username from token or fetch from API (simplified here)
-    this.username = this.apiService.getUser();
 
   }
+
+
+
+
 
 
   
@@ -39,7 +53,6 @@ export class ProfileComponent implements OnInit{
 
 
   logout(): void {
-
     this.store.dispatch(logout());
     
   }

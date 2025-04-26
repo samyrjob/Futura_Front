@@ -36,26 +36,6 @@ export class AppComponent{
   // username$!: Observable<string | null>;
 
 
-  //* Defining the Observer observer : 
-  // readonly observer: Observer<boolean> = {
-  //   next: (authenticated: boolean) => {
-
-  //     if (authenticated) {
-  //       console.log("User is connected");
-  //       this.resetInactivityTimer();
-  //     } else {
-  //       console.log("User is not connected");
-  //     }
-  //   },
-  //   error: (err: any) => {
-  //     console.error('Error validating token', err);
-  //   },
-  //   //! Complete () automatically unsubscribes the Observable !//
-  //   complete: () => {
-  //     // Optional completion handler
-  //     console.log('Observation completed');
-  //   }
-  // };
 
   constructor(private router: Router, private apiService: ApiService, private jwtHelper: JwtHelperService,
      private store: Store<AppState>

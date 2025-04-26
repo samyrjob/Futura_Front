@@ -1,15 +1,18 @@
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 <p>profile works and Registration succeeded!</p>
-<!-- Home link -->
-<a routerLink="/">Home</a>
-<br><br>
-<h3>Disconnect : </h3>
-<button (click)="logout()">Log Out button</button>
+
+
+<div *ngIf="isAuthenticated$ | async">
+  <div *ngIf="username$ | async as username">
+    <h3>Hello {{ username }}</h3>
+  </div>
+  <div>
+    <br><br>
+    <h3>Disconnect : </h3>
+    <button (click)="logout()">Log Out button</button>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
 <!-- About link -->
 <a routerLink="/about">About</a>
-
-
-<div *ngIf="username">
-    <h1>Welcome, {{ username.username }}!</h1>
-    <!-- <p>Email: {{ username.email }}</p> -->
-  </div>
