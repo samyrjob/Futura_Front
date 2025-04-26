@@ -31,8 +31,6 @@ apiUrl: string = environment.apiBaseUrl;
   }
 
 
-
-
   DoLogIn(credentials: LoginRequestDTO): Observable<any> {
     return this.http.post(this.logIn, credentials, {
         responseType: 'json',
@@ -43,6 +41,7 @@ apiUrl: string = environment.apiBaseUrl;
                 this.router.navigate(['/profile']);
             }
         })
+
     );
 }
 

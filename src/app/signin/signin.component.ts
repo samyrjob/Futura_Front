@@ -11,6 +11,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  // Required for animations
 import { CommonModule } from '@angular/common';
+import { Store } from '@ngrx/store';
+import { AppState } from '../app.state';
+import { login } from '../authentication/auth.actions';
 
 @Component({
   selector: 'app-signin',
@@ -39,7 +42,7 @@ togglePasswordVisibility() {
   hidePassword: boolean = true;
   errorMessage: string | null = null;
 
-  constructor(private fb: FormBuilder, private apiService: ApiService, private router: Router){
+  constructor(private fb: FormBuilder, private apiService: ApiService, private router: Router,  private store: Store<AppState>){
     
   }
   
@@ -52,22 +55,8 @@ togglePasswordVisibility() {
   }
 
   
-    onSubmit() {
-      const { email, password } = this.signinForm.value;
-
-      this.apiService.DoLogIn({email, password}).subscribe(
-        (response) => {
-          // Success: handle successful login, for example, navigate to another page
-          console.log('Login successful', response);
-            // Navigate to the dashboard after successful login
-          this.router.navigate(['/profile']);
-
-        },
-        (error) => {
-          // Error: display an error message if login failed
-          this.errorMessage = 'Invalid username or password';
-          console.error('Login failed', error);
-        }
-      );
-    }
+  onSubmit() {
+    const { email, password } = this.signinForm.value;
+    this.store.dispatch(login({ email, password }));
+  }
 }

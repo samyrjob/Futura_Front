@@ -26,14 +26,15 @@ export class AuthInterceptor implements HttpInterceptor {
     return next.handle(authReq).pipe(
       catchError((error: HttpErrorResponse) => {
         if (error.status === 401) {
-          return this.handle401Error(authReq, next);
+          return this.handle401Error(authReq, next, error);
         }
         return throwError(() => error);
       })
     );
   }
 
-  private handle401Error(request: HttpRequest<any>, next: HttpHandler) {
+
+  private handle401Error(request: HttpRequest<any>, next: HttpHandler, originalError: HttpErrorResponse) {
     if (!this.isRefreshing) {
       this.isRefreshing = true;
       
@@ -44,14 +45,13 @@ export class AuthInterceptor implements HttpInterceptor {
         }),
         catchError(() => {
           this.router.navigate(['/sign_in']);
-          return throwError(() => new Error('Session expired'));
+          return throwError(() => originalError); // Return the ORIGINAL error
         }),
-        switchMap(() => throwError(() => new Error('Session expired')))
+        switchMap(() => throwError(() => originalError)) // Return the ORIGINAL error
       );
     }
-    //     //* Completes the Observable without emitting anything
-    this.snackBar.open('Session expired', 'Close', {
-      duration: 2000,})
-    return EMPTY; 
+    //! leave it for after when doing automatic logout please
+    // this.snackBar.open('Session expired', 'Close', { duration: 2000 });
+    return throwError(() => originalError); // Return the ORIGINAL error
+    }
   }
-}

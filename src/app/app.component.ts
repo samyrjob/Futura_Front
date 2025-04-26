@@ -7,7 +7,7 @@ import { catchError, map, Observable, Observer, of } from 'rxjs';
 import { AppState } from './app.state';
 import { Store, StoreModule } from '@ngrx/store';
 import { AuthState } from './authentication/AuthState';
-import { selectisAuthenticated, selectUsername } from './authentication/auth.selectors';
+import { selectIsAuthenticated, selectUsername } from './authentication/auth.selectors';
 import { login, logout } from './authentication/auth.actions';
 import { CommonModule } from '@angular/common';
 
@@ -32,8 +32,8 @@ export class AppComponent{
   displayconsole: any;
 
 
-  isAuthenticated$!: Observable<boolean>;
-  username$!: Observable<string | null>;
+  // isAuthenticated$!: Observable<boolean>;
+  // username$!: Observable<string | null>;
 
 
   //* Defining the Observer observer : 
@@ -61,20 +61,20 @@ export class AppComponent{
      private store: Store<AppState>
     ) {
 
-    this.isAuthenticated$ = this.store.select(selectisAuthenticated);
-    this.username$ = this.store.select(selectUsername);
+    // this.isAuthenticated$ = this.store.select(selectIsAuthenticated);
+    // this.username$ = this.store.select(selectUsername);
   }
 
-  loginUser() {
-    const name = prompt("Enter your username:");
-    if (name){
-      this.store.dispatch(login({username: name.trim() }));
-    }
-  }
+  // loginUser() {
+  //   const name = prompt("Enter your username:");
+  //   if (name){
+  //     this.store.dispatch(login({username: name.trim() }));
+  //   }
+  // }
 
-  logoutUser(){
-    this.store.dispatch(logout());
-  }
+  // logoutUser(){
+  //   this.store.dispatch(logout());
+  // }
       
 
   ngOnInit() {

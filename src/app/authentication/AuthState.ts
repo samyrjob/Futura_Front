@@ -1,10 +1,15 @@
+import { Utilisator } from '../model/Utilisator';
+
 export interface AuthState {
-    isAuthenticated : boolean;
-    username : string | null;
+  isAuthenticated: boolean;
+//   username: string | null;
+  user: Utilisator | null;
+  error: any; // 👈 add this line to store login errors
 }
 
-// here initialAuthState is a plain object that implements the AuthState interface. 
 export const initialAuthState: AuthState = {
-    isAuthenticated: false,
-    username: null
+  isAuthenticated: false,
+//   username: null,
+  user: null,
+  error: null, // 👈 initialize error state
 };

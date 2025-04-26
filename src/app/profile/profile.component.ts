@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { ApiService } from '../shared/api.service';
 import { CommonModule } from '@angular/common';
+import { Store } from '@ngrx/store';
+import { AppState } from '../app.state';
+import { logout } from '../authentication/auth.actions';
 
 
 @Component({
@@ -16,7 +19,7 @@ export class ProfileComponent implements OnInit{
   username: any;
   message: string='';
 
-  constructor(private apiService: ApiService, private router: Router) {}
+  constructor(private apiService: ApiService, private router: Router, private store: Store<AppState>) {}
   
   ngOnInit() {
     // Extract username from token or fetch from API (simplified here)
@@ -36,12 +39,9 @@ export class ProfileComponent implements OnInit{
 
 
   logout(): void {
-    this.apiService.logout().subscribe(
-      {
-        next: (response) => console.log("disconnected successfully bro ! "),
-        error: (err) => console.log("failure why disconnecting")
-      }
-    );
+
+    this.store.dispatch(logout());
+    
   }
 
 }
