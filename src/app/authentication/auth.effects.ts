@@ -1,0 +1,97 @@
+import { Injectable } from '@angular/core';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { ApiService } from '../shared/api.service';
+import { login, loginSuccess, loginFailure, logout } from './auth.actions';
+import { catchError, map, mergeMap, tap } from 'rxjs/operators';
+import { EMPTY, of } from 'rxjs';
+import { Router } from '@angular/router';
+import { jwtDecode } from 'jwt-decode';
+import { Utilisator } from '../model/Utilisator';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
+@Injectable()
+export class AuthEffects {
+
+login$;
+loginSuccess$;
+logout$;
+loginFailure$;
+
+
+
+
+  constructor(
+    private actions$: Actions,
+    private apiService: ApiService,
+    private router: Router,
+    private snackBar: MatSnackBar
+  ) {
+
+
+      
+        this.login$ = createEffect(() =>
+          this.actions$.pipe(
+            ofType(login),
+            mergeMap(({ email, password }) =>
+              this.apiService.DoLogIn({ email, password }).pipe(
+                map(response => {
+                  const token = response.body.accessToken;
+                  const user = jwtDecode(token) as Utilisator;
+                  return loginSuccess({ user });
+                }),
+                catchError((error) => 
+           {     
+                    return of(loginFailure({ error: error.message || 'Unknown error' }));
+                }
+
+                
+                )
+              )
+            )
+          )
+        );
+      
+        // Optional: Navigate in an effect (or keep in the service if preferred)
+        this.loginSuccess$ = createEffect(() =>
+          this.actions$.pipe(
+            ofType(loginSuccess),
+            tap(() => this.router.navigate(['/profile']))
+          ),
+          { dispatch: false }
+        );
+
+
+        this.loginFailure$ = createEffect(() => 
+                
+            this.actions$.pipe(
+                ofType(loginFailure),
+                tap(({ error }) => {
+                    this.snackBar.open('Wrong Credentials', 'Close', { duration: 2000 });
+                // // Handle the error (e.g., show a notification)
+                    console.error('Login failed', error);
+                // return EMPTY
+                })
+            ),
+            { dispatch: false }
+            );
+    
+    
+            // Logout effect
+            // Optional: Navigate in an effect (or keep in the service if preferred)
+      
+        this.logout$ = createEffect(() =>
+          this.actions$.pipe(
+            ofType(logout),
+            tap(() => {
+              this.apiService.logout().subscribe(
+                {
+                    next: (response) => console.log("disconnected successfully bro ! (from new auth effects "),
+                    error: (err) => console.log("failure why disconnecting from new auth effects")
+                  }
+              );  // call logout API
+            })
+          ),
+          { dispatch: false }
+        );
+  }
+}
