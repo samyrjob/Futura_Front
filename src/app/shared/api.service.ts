@@ -2,10 +2,11 @@ import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpParameterCodec, HttpResponse } from '@angular/common/http';
 import { catchError, map, Observable, of, tap, throwError } from 'rxjs';
 import { LoginRequestDTO } from '../model/LoginRequestDTO';
-import {Utilisator} from '../model/Utilisator';
+import {UtilisatorDTO} from '../model/UtilisatorDTO';
 import { isPlatformBrowser } from '@angular/common';
 import { environment } from '../../environment/environment';
 import { Router } from '@angular/router';
+import { NewUtilisatorDTO } from '../model/NewUtilisatorDTO';
 
 
 @Injectable({
@@ -47,15 +48,15 @@ apiUrl: string = environment.apiBaseUrl;
 
 
 
-  DoRegister(new_user: Utilisator): Observable<any> {
+  DoRegister(new_user: NewUtilisatorDTO): Observable<any> {
     return this.http.post(this.register, new_user);
   }
 
 
 
     // Method to fetch all utilisateurs
-  getAllUtilisateurs(): Observable<Utilisator[]> {
-      return this.http.get<Utilisator[]>(this.getUtilisators);
+  getAllUtilisateurs(): Observable<UtilisatorDTO[]> {
+      return this.http.get<UtilisatorDTO[]>(this.getUtilisators);
     }
   
 
@@ -67,14 +68,14 @@ apiUrl: string = environment.apiBaseUrl;
 
 
     validateUserToken(): Observable<any> {
-      return this.http.get<{ user: Utilisator, authenticated: boolean }>(this.userAndValidationToken)
+      return this.http.get<{ user: UtilisatorDTO, authenticated: boolean }>(this.userAndValidationToken)
     }
 
 
 
 
 
-    getUser(): Observable<Utilisator>{
+    getUser(): Observable<UtilisatorDTO>{
       return this.validateUserToken().pipe(
         map(response => response.user)
       )

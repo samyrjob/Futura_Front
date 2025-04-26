@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../shared/api.service';
 import { RouterModule } from '@angular/router';
-import { Utilisator } from '../model/Utilisator';
+import { UtilisatorDTO } from '../model/UtilisatorDTO';
 import { CommonModule } from '@angular/common';
 
 
@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NewUsersComponent {
 
-  utilisators: Utilisator[] = [];
+  utilisators: UtilisatorDTO[] = [];
   
 
   constructor(private apiService: ApiService){
@@ -29,7 +29,7 @@ export class NewUsersComponent {
   
   public fetchUtilisateurs(){
     this.apiService.getAllUtilisateurs().subscribe(
-      (data: Utilisator[]) => {
+      (data: UtilisatorDTO[]) => {
         this.utilisators = data;
       },
       (error) => {

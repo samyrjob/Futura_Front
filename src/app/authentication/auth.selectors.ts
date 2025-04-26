@@ -15,6 +15,6 @@ export const selectUser = createSelector(
 
 // Optional: to get username from user object
 export const selectUsername = createSelector(
-  selectUser,
-  (user) => user?.username ?? null
+  selectAuthState,
+  (state: AuthState) => state.user?.username ?? null
 );

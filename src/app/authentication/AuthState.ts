@@ -1,9 +1,8 @@
-import { Utilisator } from '../model/Utilisator';
+import { UtilisatorDTO } from '../model/UtilisatorDTO';
 
 export interface AuthState {
   isAuthenticated: boolean;
-//   username: string | null;
-  user: Utilisator | null;
+  user: UtilisatorDTO | null;
   error: any; // 👈 add this line to store login errors
 }
 
