@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
 import { logout } from '../authentication/auth.actions';
-import { Observable, Subject, takeUntil, timer } from 'rxjs';
+import { Observable } from 'rxjs';
 import { selectIsAuthenticated, selectUsername } from '../authentication/auth.selectors';
 import { AuthService } from '../shared/auth.service';
 
@@ -27,36 +27,12 @@ export class ProfileComponent {
 
   constructor(private apiService: ApiService, private router: Router, private store: Store<AppState>, private authService: AuthService) {
 
-    
     this.isAuthenticated$ = this.store.select(selectIsAuthenticated);
     this.username$ = this.store.select(selectUsername);
-    
-
     
   }
   
 
-//   private destroy$ = new Subject<void>();
-
-//   ngOnInit() {
-//     timer(1000).pipe(
-//       takeUntil(this.destroy$) // Annule si destroy$ émet
-//     ).subscribe(() => {
-//       this.authService.setAuthenticated();
-//     });
-// }
-
-//   ngOnDestroy() {
-//     this.destroy$.next();
-//     this.destroy$.complete();
-//   }
-
-
-
-
-
-
-  
   joinGame() {
     this.apiService.launchGame().subscribe({
       next: (response) => this.message = response,
