@@ -3,13 +3,14 @@ import { RouterModule, Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { ApiService } from './shared/api.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { catchError, map, Observable, Observer, of } from 'rxjs';
+import { catchError, map, Observable, Observer, of, Subscription } from 'rxjs';
 import { AppState } from './app.state';
 import { Store, StoreModule } from '@ngrx/store';
 import { AuthState } from './authentication/AuthState';
 import { selectIsAuthenticated, selectUsername } from './authentication/auth.selectors';
 import { login, logout } from './authentication/auth.actions';
 import { CommonModule } from '@angular/common';
+import { AuthService } from './shared/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -32,36 +33,26 @@ export class AppComponent{
   displayconsole: any;
 
 
-  // isAuthenticated$!: Observable<boolean>;
-  // username$!: Observable<string | null>;
+
 
 
 
   constructor(private router: Router, private apiService: ApiService, private jwtHelper: JwtHelperService,
-     private store: Store<AppState>
-    ) {
+     private store: Store<AppState>, private authService: AuthService) {
 
-    // this.isAuthenticated$ = this.store.select(selectIsAuthenticated);
-    // this.username$ = this.store.select(selectUsername);
   }
 
-  // loginUser() {
-  //   const name = prompt("Enter your username:");
-  //   if (name){
-  //     this.store.dispatch(login({username: name.trim() }));
-  //   }
-  // }
 
-  // logoutUser(){
-  //   this.store.dispatch(logout());
-  // }
       
 
-  ngOnInit() {
 
-    // this.isUserLoggedIn().subscribe(this.observer);
-    console.log("log is working");
+  ngOnInit(): void {
+    // Subscribe to the Observable
+    console.log("haha")
   }
+
+
+
 
 
 

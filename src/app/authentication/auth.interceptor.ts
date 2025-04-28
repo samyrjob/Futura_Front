@@ -17,9 +17,9 @@ export class AuthInterceptor implements HttpInterceptor {
 
 
 
-    if (req.url.includes('validate-token-user')){
-      return next.handle(req); // skip 401 handling
-    }
+    // if (req.url.includes('validate-token-user')){
+    //   return next.handle(req); // skip 401 handling
+    // }
     
     const authReq = req.clone({ withCredentials: true });
 

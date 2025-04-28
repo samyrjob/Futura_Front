@@ -36,14 +36,7 @@ apiUrl: string = environment.apiBaseUrl;
     return this.http.post(this.logIn, credentials, {
         responseType: 'json',
         observe: 'response' // Get full response
-    }).pipe(
-        tap((response: HttpResponse<any>) => {
-            if (response.status === 200) {
-                this.router.navigate(['/profile']);
-            }
-        })
-
-    );
+    })
 }
 
 
