@@ -36,7 +36,11 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+
+## Running Unit tests  :
+FOR NOW I USE JEST ! ( SEE CONFIG JEST + ANGULAR THROUGH 'jeset-preset-angular')
+
+<!-- ## Running unit tests
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
@@ -52,7 +56,7 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs. -->
 
 ## Additional Resources
 

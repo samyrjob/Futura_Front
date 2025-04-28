@@ -1,8 +1,8 @@
-const { spawn } = require('child_process');
-const fs = require('fs');
+import { spawn } from 'child_process';
+import { createWriteStream } from 'fs';
 
 // Create a writable stream for the log file
-const logStream = fs.createWriteStream('error-log.txt', { flags: 'a' });
+const logStream = createWriteStream('error-log.txt', { flags: 'a' });
 
 // // Spawn the ng serve process
 // const ngServe = spawn('ng', ['serve', '--o']);

@@ -182,3 +182,51 @@ Application bundle generation complete. [0.257 seconds]
 [2025-04-28T10:43:04.503Z] haha
 [2025-04-28T10:45:15.635Z] Platform ID: server
 [2025-04-28T10:45:15.642Z] haha
+[2025-04-28T11:48:58.980Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-04-28T11:48:59.097Z] [33m❯[39m Building...
+[2025-04-28T11:49:03.406Z] [32m✔[39m Building...
+[2025-04-28T11:49:03.442Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m51.07 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-3BVRESC3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.28 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m156.25 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-4XJPPZFN.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.25 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m53.17 kB[39m[2m | [22m
+[32mchunk-OZ7C7BQS.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.31 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-L3G4RFTP.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.28 kB[39m[2m | [22m
+
+Application bundle generation complete. [4.308 seconds]
+
+[2025-04-28T11:49:03.510Z] Watch mode enabled. Watching for file changes...
+[2025-04-28T11:49:03.511Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-04-28T11:49:03.802Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-04-28T11:49:10.440Z] Platform ID: server
+[2025-04-28T11:49:10.448Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-04-28T11:49:10.521Z] Platform ID: server
+[2025-04-28T11:49:10.538Z] haha
+[2025-04-28T11:49:36.095Z] Platform ID: server
+[2025-04-28T11:49:36.106Z] haha
+[2025-04-28T11:49:43.676Z] Platform ID: server
+[2025-04-28T11:49:43.684Z] haha
+[2025-04-28T14:16:35.368Z] Platform ID: server
+[2025-04-28T14:16:35.411Z] haha
