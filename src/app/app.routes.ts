@@ -3,6 +3,7 @@ import { AboutComponent } from './about/about.component';
 import { NewUsersComponent } from './new-users/new-users.component';
 import { RegisterComponent } from './register/register.component';
 import { SigninComponent } from './signin/signin.component';
+import { ProfileComponent } from './profile/profile.component';
 // import { AuthGuard } from './authentication/AuthGuard';
 // import { NoAuthGuard } from './authentication/NoAuthGuard';
 // import { ProfileComponent } from './profile/profile.component';
