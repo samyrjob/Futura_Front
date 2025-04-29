@@ -68,9 +68,15 @@ export class AppComponent{
 
 
   handleInactivityLogout() {
-    if (this.store.select(selectIsAuthenticated)) {
-    this.store.dispatch(logout());
-    }
+
+    this.store.select(selectIsAuthenticated).subscribe((isAuthenticated) => {
+
+      if (isAuthenticated) {
+        this.store.dispatch(logout());
+      }
+
+  })
+  
     
 
 }
