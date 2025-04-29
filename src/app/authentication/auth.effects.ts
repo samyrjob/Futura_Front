@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { ApiService } from '../shared/api.service';
 import { login, loginSuccess, loginFailure, logout } from './auth.actions';
@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
 import { UtilisatorDTO } from '../model/UtilisatorDTO';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable()
 export class AuthEffects {
@@ -24,7 +25,8 @@ loginFailure$;
     private actions$: Actions,
     private apiService: ApiService,
     private router: Router,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {
 
 
@@ -55,7 +57,11 @@ loginFailure$;
         this.loginSuccess$ = createEffect(() =>
           this.actions$.pipe(
             ofType(loginSuccess),
-            tap(() => this.router.navigate(['/profile']))
+            tap(() => {
+              if (isPlatformBrowser(this.platformId)){
+                localStorage.setItem('isLoggedIn', 'true');  // Add this line
+              }
+              this.router.navigate(['/profile'])})
           ),
           { dispatch: false }
         );
@@ -83,6 +89,9 @@ loginFailure$;
           this.actions$.pipe(
             ofType(logout),
             tap(() => {
+              if (isPlatformBrowser(this.platformId)){
+                localStorage.setItem('isLoggedIn', 'false');  // Add this line
+              }
               this.apiService.logout().subscribe(
                 {
                     next: (response) => console.log("disconnected successfully bro ! (from new auth effects "),
