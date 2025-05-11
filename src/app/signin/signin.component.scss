@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(255, 0, 191) , rgb(115, 28, 255));;
   }
   
   .signin-card {
