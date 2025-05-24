@@ -46,14 +46,19 @@ export class ProfileComponent implements OnInit, OnDestroy{
 
     if (isPlatformBrowser(this.platformId)){
       // Add the storage event listener when component loads
-      this.storageEventListener = (event) => {
-        if (event.key === 'isLoggedIn' && event.newValue === 'false') {
-          this.router.navigate(['/sign_in']); // Use Angular Router (better than window.location)
-        }
-      };
-      window.addEventListener('storage', this.storageEventListener);
+      const storedAppState = localStorage.getItem('appState');
+      const isLoggedIn = storedAppState ? JSON.parse(storedAppState).auth.isAuthenticated : false;
+      console.log(isLoggedIn);
+        this.storageEventListener = (event) => {
+          if (event.key === 'appState' && isLoggedIn === 'false') {
+            this.router.navigate(['/sign_in']); // Use Angular Router (better than window.location)
+          }
+        };
 
-    }
+
+        window.addEventListener('storage', this.storageEventListener);
+      }
+    
   }
 
   ngOnDestroy(): void {

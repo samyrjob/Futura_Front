@@ -502,3 +502,554 @@ Application bundle generation complete. [0.577 seconds]
 [2025-04-29T09:52:52.929Z] haha
 [2025-04-29T09:52:52.951Z] server
 [2025-04-29T09:52:52.960Z] server
+[2025-04-30T09:29:15.455Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-04-30T09:29:15.728Z] [33m❯[39m Building...
+[2025-04-30T09:29:21.652Z] [32m✔[39m Building...
+[2025-04-30T09:29:21.697Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.09 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-LTPQDWP5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.75 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.75 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-CVVI6M63.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.88 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.20 kB[39m[2m | [22m
+[32mchunk-Q4A5CB5C.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.78 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-ACLTCEGV.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.91 kB[39m[2m | [22m
+
+Application bundle generation complete. [5.924 seconds]
+
+[2025-04-30T09:29:21.804Z] Watch mode enabled. Watching for file changes...
+[2025-04-30T09:29:21.805Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-04-30T09:29:22.273Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-04-30T09:29:36.666Z] Platform ID: server
+[2025-04-30T09:29:36.690Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-04-30T09:29:36.905Z] Platform ID: server
+[2025-04-30T09:29:36.942Z] haha
+[2025-04-30T09:29:37.228Z] Platform ID: server
+[2025-04-30T09:29:37.244Z] haha
+[2025-04-30T09:57:41.164Z] Platform ID: server
+[2025-04-30T09:57:41.183Z] haha
+[2025-04-30T09:57:45.642Z] Platform ID: server
+[2025-04-30T09:57:45.654Z] haha
+[2025-04-30T09:58:56.995Z] Platform ID: server
+[2025-04-30T09:58:57.005Z] haha
+[2025-04-30T09:58:57.094Z] server
+[2025-04-30T09:58:57.109Z] server
+[2025-04-30T10:00:24.714Z] Platform ID: server
+[2025-04-30T10:00:24.719Z] haha
+[2025-04-30T10:00:24.726Z] server
+[2025-04-30T10:00:24.731Z] server
+[2025-04-30T10:00:40.409Z] Platform ID: server
+[2025-04-30T10:00:40.416Z] haha
+[2025-04-30T10:00:40.423Z] server
+[2025-04-30T10:00:40.440Z] server
+[2025-04-30T11:05:23.535Z] Platform ID: server
+[2025-04-30T11:05:23.585Z] haha
+[2025-04-30T11:05:30.434Z] Platform ID: server
+[2025-04-30T11:05:30.443Z] haha
+[2025-04-30T11:05:33.493Z] Platform ID: server
+[2025-04-30T11:05:33.499Z] haha
+[2025-04-30T11:05:33.507Z] server
+[2025-04-30T11:05:33.519Z] server
+[2025-04-30T11:07:35.385Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-04-30T11:07:37.298Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-04-30T11:07:37.302Z] Application bundle generation failed. [1.912 seconds]
+
+[2025-04-30T11:07:37.310Z] [1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'logout' does not exist on type 'ProfileComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.html:12:21:
+[37m      12 │     <button (click)="[32mlogout[37m()">Log Out button</button>
+         ╵                      [32m~~~~~~[0m
+
+  Error occurs in the template of component ProfileComponent.
+
+    src/app/profile/profile.component.ts:17:15:
+[37m      17 │   templateUrl: [32m'./profile.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2420: Class 'ProfileComponent' incorrectly implements interface 'OnDestroy'.
+  Property 'ngOnDestroy' is missing in type 'ProfileComponent' but required in type 'OnDestroy'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:24:13:
+[37m      24 │ export class [32mProfileComponent[37m implements OnInit, OnDestroy{
+         ╵              [32m~~~~~~~~~~~~~~~~[0m
+
+  'ngOnDestroy' is declared here.
+
+    node_modules/@angular/core/index.d.ts:6176:4:
+[37m      6176 │     [32mngOnDestroy(): void;[37m
+           ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ngOnDestroy'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:64:2:
+[37m      64 │   [32mngOnDestroy[37m(): void {
+         ╵   [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:64:15:
+[37m      64 │   ngOnDestroy()[32m:[37m void {
+         ╵                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type '{ console: Console; "": any; if(isPlatformBrowser: any): any; }' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:64:22:
+[37m      64 │   ngOnDestroy(): void [32m{[37m
+         ╵                       [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:66:11:
+[37m      66 │     console[32m.[37mlog(this.platformId)
+         ╵            [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:66:16:
+[37m      66 │     console.log([32mthis[37m.platformId)
+         ╵                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:67:4:
+[37m      67 │     [32mif[37m (isPlatformBrowser(this.platformId))
+         ╵     [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'isPlatformBrowser' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:67:8:
+[37m      67 │     if ([32misPlatformBrowser[37m(this.platformId))
+         ╵         [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:67:25:
+[37m      67 │     if (isPlatformBrowser[32m([37mthis.platformId))
+         ╵                          [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:67:26:
+[37m      67 │     if (isPlatformBrowser([32mthis[37m.platformId))
+         ╵                           [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:67:42:
+[37m      67 │     if (isPlatformBrowser(this.platformId)[32m)[37m
+         ╵                                           [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:69:10:
+[37m      69 │       if ([32mthis[37m.storageEventListener) {
+         ╵           [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:70:46:
+[37m      70 │ ... window.removeEventListener('storage', [32mthis[37m.storageEventListener);
+         ╵                                           [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:73:2:
+[37m      73 │   [32m}[37m
+         ╵   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'joinGame'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:76:2:
+[37m      76 │   [32mjoinGame[37m() {
+         ╵   [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:76:13:
+[37m      76 │   joinGame() [32m{[37m
+         ╵              [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:77:4:
+[37m      77 │     [32mthis[37m.apiService.launchGame().subscribe({
+         ╵     [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'response' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:78:13:
+[37m      78 │       next: ([32mresponse[37m) => this.message = response,
+         ╵              [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:78:26:
+[37m      78 │       next: (response) => [32mthis[37m.message = response,
+         ╵                           [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'err' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:79:14:
+[37m      79 │       error: ([32merr[37m) => this.message = 'Failed to launch game: ' + e...
+         ╵               [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2532: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:79:22:
+[37m      79 │       error: (err) => [32mthis[37m.message = 'Failed to launch game: ' + e...
+         ╵                       [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:85:10:
+[37m      85 │   logout()[32m:[37m void {
+         ╵           [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ':' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:86:8:
+[37m      86 │     this[32m.[37mstore.dispatch(logout());
+         ╵         [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:86:33:
+[37m      86 │     this.store.dispatch(logout())[32m;[37m
+         ╵                                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/profile/profile.component.ts:90:0:
+[37m      90 │ [32m}[37m
+         ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mExpected identifier but found ":"[0m
+
+    src/app/profile/profile.component.ts:111:13:
+[37m      111 │     console, [32m:[37m .log(this.platformId),
+          ╵              [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mExpected identifier but found ":"[0m
+
+    src/app/profile/profile.component.ts:111:13:
+[37m      111 │     console, [32m:[37m .log(this.platformId),
+          ╵              [32m^[0m
+
+[39m[22m
+[2025-04-30T11:07:53.417Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-04-30T11:07:54.021Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-04-30T11:07:54.024Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.09 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-LTPQDWP5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.75 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.75 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-NRSWEPEI.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.20 kB[39m[2m | [22m
+[32mchunk-Q4A5CB5C.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.78 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-53JEZU22.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.603 seconds]
+
+[2025-04-30T11:07:54.886Z] [1m[31mTypeError: ɵgetOrCreateAngularServerApp is not a function
+    at _AngularAppEngine.eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:11914:25)
+    at Generator.next (<anonymous>)
+    at fulfilled (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:74:24)
+    at _ZoneDelegate.invoke (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:312:158)
+    at ZoneImpl.run (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:108:35)
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:1011:30)
+    at _ZoneDelegate.invokeTask (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:338:171)
+    at ZoneImpl.runTask (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:146:37)
+    at drainMicroTaskQueue (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:493:23)[39m[22m
+[2025-04-30T11:07:55.010Z] Page reload sent to client(s).
+[2025-04-30T11:07:55.012Z] [1m[31mTypeError: ɵgetOrCreateAngularServerApp is not a function
+    at _AngularAppEngine.eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:11914:25)
+    at Generator.next (<anonymous>)
+    at fulfilled (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:74:24)
+    at _ZoneDelegate.invoke (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:312:158)
+    at ZoneImpl.run (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:108:35)
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:1011:30)
+    at _ZoneDelegate.invokeTask (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:338:171)
+    at ZoneImpl.runTask (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:146:37)
+    at drainMicroTaskQueue (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:493:23)[39m[22m
+[2025-04-30T11:07:58.408Z] Platform ID: server
+[2025-04-30T11:07:58.421Z] Platform ID: server
+[2025-04-30T11:07:58.426Z] haha
+[2025-04-30T11:08:09.144Z] Platform ID: server
+[2025-04-30T11:08:09.150Z] haha
+[2025-04-30T11:08:09.175Z] server
+[2025-04-30T11:08:09.178Z] server
+[2025-04-30T11:08:25.998Z] Platform ID: server
+[2025-04-30T11:08:26.002Z] haha
+[2025-04-30T11:08:26.006Z] server
+[2025-04-30T11:08:26.014Z] server
+[2025-04-30T11:10:02.604Z] Platform ID: server
+[2025-04-30T11:10:02.609Z] haha
+[2025-04-30T11:10:02.615Z] server
+[2025-04-30T11:10:02.618Z] server
+[2025-04-30T12:42:29.205Z] Platform ID: server
+[2025-04-30T12:42:29.253Z] haha
+[2025-04-30T12:42:29.273Z] server
+[2025-04-30T12:42:29.290Z] server
+[2025-04-30T13:33:32.632Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-04-30T13:33:34.066Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-04-30T13:33:34.098Z] 
+No output file changes.
+
+Application bundle generation complete. [1.440 seconds]
+
+[2025-04-30T21:12:11.405Z] Platform ID: server
+[2025-04-30T21:12:11.589Z] haha
+[2025-04-30T21:12:12.193Z] Platform ID: server
+[2025-04-30T21:12:12.203Z] haha
+[2025-04-30T21:12:12.220Z] server
+[2025-04-30T21:12:12.239Z] server
+[2025-05-06T10:22:05.185Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-06T10:22:05.536Z] [33m❯[39m Building...
+[2025-05-06T10:22:11.988Z] [32m✔[39m Building...
+[2025-05-06T10:22:12.029Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.09 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-LTPQDWP5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.75 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.75 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-NRSWEPEI.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.20 kB[39m[2m | [22m
+[32mchunk-Q4A5CB5C.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.78 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-53JEZU22.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [6.452 seconds]
+
+[2025-05-06T10:22:12.126Z] Watch mode enabled. Watching for file changes...
+[2025-05-06T10:22:12.127Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-06T10:22:12.481Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-06T10:22:22.460Z] Platform ID: server
+[2025-05-06T10:22:22.477Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-06T10:22:22.600Z] Platform ID: server
+[2025-05-06T10:22:22.614Z] Platform ID: server
+[2025-05-06T10:22:22.648Z] haha
+[2025-05-06T10:22:22.658Z] haha
+[2025-05-06T11:28:08.525Z] Platform ID: server
+[2025-05-06T11:28:08.554Z] haha
+[2025-05-24T21:35:51.605Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-24T21:35:52.211Z] [33m❯[39m Building...
+[2025-05-24T21:36:03.526Z] [32m✔[39m Building...
+[2025-05-24T21:36:03.582Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.09 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-LTPQDWP5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.75 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.75 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-NRSWEPEI.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.20 kB[39m[2m | [22m
+[32mchunk-Q4A5CB5C.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.78 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-53JEZU22.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [11.312 seconds]
+
+[2025-05-24T21:36:03.778Z] Watch mode enabled. Watching for file changes...
+[2025-05-24T21:36:03.781Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-24T21:36:04.338Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-24T21:36:14.545Z] Platform ID: server
+[2025-05-24T21:36:14.560Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-24T21:36:14.768Z] Platform ID: server
+[2025-05-24T21:36:14.792Z] haha
+[2025-05-24T21:36:54.589Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-24T21:36:55.943Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-24T21:36:55.952Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.29 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m54.40 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.353 seconds]
+
+[2025-05-24T21:36:56.088Z] Component update sent to client(s).
+[2025-05-24T21:37:26.051Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-24T21:37:26.909Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-24T21:37:26.911Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.09 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m54.20 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.858 seconds]
+
+[2025-05-24T21:37:26.998Z] Component update sent to client(s).
+[2025-05-24T21:38:35.455Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-24T21:38:36.942Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-24T21:38:36.944Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.29 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m54.40 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.489 seconds]
+
+[2025-05-24T21:38:37.027Z] Component update sent to client(s).
+[2025-05-24T21:39:06.541Z] Platform ID: server
+[2025-05-24T21:39:06.570Z] Platform ID: server
+[2025-05-24T21:39:06.578Z] haha
+[2025-05-24T21:39:12.749Z] Platform ID: server
+[2025-05-24T21:39:12.756Z] haha
+[2025-05-24T21:39:34.736Z] Platform ID: server
+[2025-05-24T21:39:34.747Z] haha
+[2025-05-24T21:47:44.775Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-24T21:47:45.071Z] [33m❯[39m Building...
+[2025-05-24T21:47:53.701Z] [32m✔[39m Building...
+[2025-05-24T21:47:53.751Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.29 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-LTPQDWP5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.75 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.95 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-NRSWEPEI.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.40 kB[39m[2m | [22m
+[32mchunk-Q4A5CB5C.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.78 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-53JEZU22.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [8.629 seconds]
+
+[2025-05-24T21:47:53.851Z] Watch mode enabled. Watching for file changes...
+[2025-05-24T21:47:53.853Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-24T21:47:54.169Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-24T21:48:03.864Z] Platform ID: server
+[2025-05-24T21:48:03.876Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-24T21:48:04.517Z] Platform ID: server
+[2025-05-24T21:48:04.523Z] Platform ID: server
+[2025-05-24T21:48:04.544Z] haha
+[2025-05-24T21:48:04.553Z] haha
+[2025-05-24T21:48:32.523Z] Platform ID: server
+[2025-05-24T21:48:32.536Z] haha
+[2025-05-24T21:48:32.597Z] server
+[2025-05-24T21:48:32.604Z] server

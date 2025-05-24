@@ -2,13 +2,16 @@ import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { ApiService } from '../shared/api.service';
 import { login, loginSuccess, loginFailure, logout } from './auth.actions';
-import { catchError, map, mergeMap, tap } from 'rxjs/operators';
+import { catchError, filter, map, mergeMap, take, tap } from 'rxjs/operators';
 import { EMPTY, of } from 'rxjs';
 import { Router } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
 import { UtilisatorDTO } from '../model/UtilisatorDTO';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { isPlatformBrowser } from '@angular/common';
+import { Store } from '@ngrx/store';
+import { AppState } from '../app.state';
+import { selectIsAuthenticated } from './auth.selectors';
 
 @Injectable()
 export class AuthEffects {
@@ -26,7 +29,8 @@ loginFailure$;
     private apiService: ApiService,
     private router: Router,
     private snackBar: MatSnackBar,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private store: Store<AppState>
   ) {
 
 
@@ -58,9 +62,9 @@ loginFailure$;
           this.actions$.pipe(
             ofType(loginSuccess),
             tap(() => {
-              if (isPlatformBrowser(this.platformId)){
-                localStorage.setItem('isLoggedIn', 'true');  // Add this line
-              }
+              // if (isPlatformBrowser(this.platformId)){
+              //   localStorage.setItem('isLoggedIn', 'true');  // Add this line
+              // }
               this.router.navigate(['/profile'])})
           ),
           { dispatch: false }
@@ -85,13 +89,15 @@ loginFailure$;
             // Logout effect
             // Optional: Navigate in an effect (or keep in the service if preferred)
       
+
+            //* BEFORE
         this.logout$ = createEffect(() =>
           this.actions$.pipe(
             ofType(logout),
             tap(() => {
-              if (isPlatformBrowser(this.platformId)){
-                localStorage.setItem('isLoggedIn', 'false');  // Add this line
-              }
+              // if (isPlatformBrowser(this.platformId)){
+              //   localStorage.setItem('isLoggedIn', 'false');  // Add this line
+              // }
               this.apiService.logout().subscribe(
                 {
                     next: (response) => console.log("disconnected successfully bro ! (from new auth effects "),
@@ -102,5 +108,23 @@ loginFailure$;
           ),
           { dispatch: false }
         );
+
+        // this.logout$ = createEffect(() =>
+        //   this.actions$.pipe(
+        //     ofType(logout),
+        //     tap(() => {
+        //       // Only attempt logout if we think we're still authenticated
+        //       this.store.select(selectIsAuthenticated).pipe(
+        //         take(1),
+        //         filter(isAuthenticated => isAuthenticated),
+        //         mergeMap(() => this.apiService.logout())
+        //       ).subscribe({
+        //         next: () => console.log("Disconnected successfully"),
+        //         error: (err) => console.log("Logout failed", err)
+        //       });
+        //     })
+        //   ),
+        //   { dispatch: false }
+        // );
   }
 }
