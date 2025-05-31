@@ -26,11 +26,11 @@ private authStatus = `${this.apiUrl}/auth/status`;
   }
 
 
-  aboutToExpireFunction(): Observable<boolean>{
-    return this.http.get<{[key: string]: boolean}>(this.aboutToExpire).pipe(
-      map(response => response['30 seconds left before expiration :'] || false)
-    );
-  }
+  // aboutToExpireFunction(): Observable<boolean>{
+  //   return this.http.get<{[key: string]: boolean}>(this.aboutToExpire).pipe(
+  //     map(response => response['30 seconds left before expiration :'] || false)
+  //   );
+  // }
 
   getAuthStatus(): Observable<any>{
     return this.http.get<{ exp: number }>(this.authStatus);

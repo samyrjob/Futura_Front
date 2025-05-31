@@ -164,7 +164,7 @@ export class AppComponent implements OnInit, OnDestroy {
     // Handle token refresh on activity
     this.activitySubject.pipe(
       debounceTime(500), // Debounce rapid events
-      distinctUntilChanged(), // Avoid duplicate events
+      // distinctUntilChanged(), // Avoid duplicate events
       switchMap(() =>
         this.store.select(selectIsAuthenticated).pipe(
           filter(isAuthenticated => isAuthenticated), // Only proceed if authenticated
@@ -180,6 +180,12 @@ export class AppComponent implements OnInit, OnDestroy {
         const exp = res.exp;
         console.log('🔁 status obtained successfully : \n'),
         console.log(exp);
+        const current = new Date();
+        const timestamp = current.getTime()/1000;
+        if (exp - timestamp <= 30){
+          console.log("less or equal 30 sc left before expiration of the token !")
+          this.authService.refreshToken().subscribe();
+        }
 
       },
       error: (err) => console.error('❌ Error getting the status:', err)

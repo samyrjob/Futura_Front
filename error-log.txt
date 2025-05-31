@@ -2425,3 +2425,182 @@ Application bundle generation complete. [0.453 seconds]
 [2025-05-31T16:12:53.362Z] Platform ID: server
 [2025-05-31T16:12:53.373Z] Platform ID: server
 [2025-05-31T16:13:00.816Z] Platform ID: server
+[2025-05-31T16:22:44.953Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:22:47.512Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:22:47.557Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.25 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.36 kB[39m[2m | [22m
+
+Application bundle generation complete. [2.563 seconds]
+
+[2025-05-31T16:22:48.419Z] Page reload sent to client(s).
+[2025-05-31T16:22:48.603Z] Platform ID: server
+[2025-05-31T16:22:48.632Z] Platform ID: server
+[2025-05-31T16:23:41.435Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:23:42.133Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:23:42.134Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.25 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.36 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.698 seconds]
+
+[2025-05-31T16:23:42.234Z] Page reload sent to client(s).
+[2025-05-31T16:23:43.365Z] Platform ID: server
+[2025-05-31T16:23:43.380Z] Platform ID: server
+[2025-05-31T16:30:05.695Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:30:06.562Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:30:06.576Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.23 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.33 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.866 seconds]
+
+[2025-05-31T16:30:07.224Z] Page reload sent to client(s).
+[2025-05-31T16:30:07.374Z] Platform ID: server
+[2025-05-31T16:30:07.507Z] Platform ID: server
+[2025-05-31T16:30:16.538Z] Platform ID: server
+[2025-05-31T16:40:17.293Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:40:18.254Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:40:18.263Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m54.23 kB[39m[2m | [22m
+[32mchunk-ZSGKMS4N.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.16 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-6VN2WCLE.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m56.33 kB[39m[2m | [22m
+[32mchunk-JDJ5A6FA.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.20 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-W6OVK3V7.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.963 seconds]
+
+[2025-05-31T16:40:18.446Z] Page reload sent to client(s).
+[2025-05-31T16:40:19.347Z] Platform ID: server
+[2025-05-31T16:40:19.381Z] Platform ID: server
+[2025-05-31T16:40:27.315Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:40:28.144Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:40:28.145Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.42 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.52 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.828 seconds]
+
+[2025-05-31T16:40:28.287Z] Page reload sent to client(s).
+[2025-05-31T16:40:29.295Z] Platform ID: server
+[2025-05-31T16:40:29.306Z] Platform ID: server
+[2025-05-31T16:42:23.233Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:42:23.762Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:42:23.764Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.43 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.54 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.528 seconds]
+
+[2025-05-31T16:42:23.836Z] Page reload sent to client(s).
+[2025-05-31T16:42:24.363Z] Platform ID: server
+[2025-05-31T16:42:24.375Z] Platform ID: server
+[2025-05-31T16:42:30.001Z] Platform ID: server
+[2025-05-31T16:45:58.003Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:45:58.927Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:45:58.934Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.52 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.62 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.922 seconds]
+
+[2025-05-31T16:45:59.079Z] Page reload sent to client(s).
+[2025-05-31T16:45:59.322Z] Platform ID: server
+[2025-05-31T16:45:59.344Z] Platform ID: server
+[2025-05-31T16:45:59.392Z] server
+[2025-05-31T16:45:59.399Z] server
+[2025-05-31T16:46:02.830Z] Platform ID: server
+[2025-05-31T16:46:02.845Z] server
+[2025-05-31T16:46:02.849Z] server
+[2025-05-31T16:52:49.107Z] Platform ID: server
+[2025-05-31T16:56:09.612Z] Platform ID: server
+[2025-05-31T17:02:45.771Z] Platform ID: server
+[2025-05-31T17:06:25.791Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T17:06:26.912Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T17:06:26.922Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.55 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.66 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.121 seconds]
+
+[2025-05-31T17:06:27.126Z] Page reload sent to client(s).
+[2025-05-31T17:06:27.336Z] Platform ID: server
+[2025-05-31T17:06:27.365Z] Platform ID: server
+[2025-05-31T17:06:39.789Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T17:06:40.156Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T17:06:40.157Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m54.55 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-ZSGKMS4N.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.16 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m159.62 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-6VN2WCLE.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m56.66 kB[39m[2m | [22m
+[32mchunk-JDJ5A6FA.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.20 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-W6OVK3V7.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.367 seconds]
+
+[2025-05-31T17:06:48.014Z] Platform ID: server
+[2025-05-31T17:42:03.353Z] Platform ID: server
