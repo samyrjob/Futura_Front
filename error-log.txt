@@ -1053,3 +1053,1375 @@ Application bundle generation complete. [8.629 seconds]
 [2025-05-24T21:48:32.536Z] haha
 [2025-05-24T21:48:32.597Z] server
 [2025-05-24T21:48:32.604Z] server
+[2025-05-27T20:12:55.381Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-27T20:12:55.706Z] [33m❯[39m Building...
+[2025-05-27T20:13:03.039Z] [32m✔[39m Building...
+[2025-05-27T20:13:03.089Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.18 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-OE4OONG3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.91 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.99 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-M3ERUOOJ.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.28 kB[39m[2m | [22m
+[32mchunk-7MUUYJXZ.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-3X56C2HA.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [7.332 seconds]
+
+[2025-05-27T20:13:03.254Z] Watch mode enabled. Watching for file changes...
+[2025-05-27T20:13:03.256Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-27T20:13:03.703Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-27T20:13:12.706Z] Platform ID: server
+[2025-05-27T20:13:12.720Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-27T20:13:12.848Z] Platform ID: server
+[2025-05-27T20:13:12.858Z] Platform ID: server
+[2025-05-27T20:13:12.887Z] haha
+[2025-05-27T20:13:12.896Z] haha
+[2025-05-27T20:16:55.023Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-27T20:16:55.209Z] [33m❯[39m Building...
+[2025-05-27T20:17:01.010Z] [32m✔[39m Building...
+[2025-05-27T20:17:01.046Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.24 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-OE4OONG3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.91 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m158.06 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-M3ERUOOJ.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.35 kB[39m[2m | [22m
+[32mchunk-7MUUYJXZ.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-3X56C2HA.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [5.800 seconds]
+
+[2025-05-27T20:17:01.126Z] Watch mode enabled. Watching for file changes...
+[2025-05-27T20:17:01.127Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-27T20:17:01.504Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-27T20:17:12.126Z] Platform ID: server
+[2025-05-27T20:17:12.163Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-27T20:17:12.377Z] Platform ID: server
+[2025-05-27T20:17:12.419Z] haha
+[2025-05-27T20:17:17.288Z] Platform ID: server
+[2025-05-27T20:17:17.300Z] haha
+[2025-05-27T20:17:17.351Z] server
+[2025-05-27T20:17:17.363Z] server
+[2025-05-27T20:28:30.244Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-27T20:28:30.453Z] [33m❯[39m Building...
+[2025-05-27T20:28:37.151Z] [32m✔[39m Building...
+[2025-05-27T20:28:37.190Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.76 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-OE4OONG3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.91 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m158.57 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-M3ERUOOJ.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.87 kB[39m[2m | [22m
+[32mchunk-7MUUYJXZ.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-3X56C2HA.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [6.697 seconds]
+
+[2025-05-27T20:28:37.308Z] Watch mode enabled. Watching for file changes...
+[2025-05-27T20:28:37.310Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-27T20:28:37.837Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-27T20:28:46.627Z] Platform ID: server
+[2025-05-27T20:28:46.640Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-27T20:28:46.766Z] Platform ID: server
+[2025-05-27T20:28:46.806Z] haha
+[2025-05-27T20:30:48.118Z] Platform ID: server
+[2025-05-27T20:30:48.132Z] haha
+[2025-05-27T20:30:48.192Z] server
+[2025-05-27T20:30:48.198Z] server
+[2025-05-27T20:30:52.758Z] Platform ID: server
+[2025-05-27T20:30:52.764Z] haha
+[2025-05-27T20:31:03.399Z] Platform ID: server
+[2025-05-27T20:31:03.407Z] haha
+[2025-05-30T09:24:17.905Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-30T09:24:18.154Z] [33m❯[39m Building...
+[2025-05-30T09:24:25.597Z] [32m✔[39m Building...
+[2025-05-30T09:24:25.644Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.95 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-OE4OONG3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.91 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.76 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-M3ERUOOJ.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.05 kB[39m[2m | [22m
+[32mchunk-7MUUYJXZ.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-3X56C2HA.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [7.442 seconds]
+
+[2025-05-30T09:24:25.764Z] Watch mode enabled. Watching for file changes...
+[2025-05-30T09:24:25.766Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-30T09:24:26.127Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-30T09:24:35.192Z] Platform ID: server
+[2025-05-30T09:24:35.201Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-30T09:24:35.299Z] Platform ID: server
+[2025-05-30T09:24:35.326Z] haha
+[2025-05-30T09:24:44.537Z] Platform ID: server
+[2025-05-30T09:24:44.547Z] haha
+[2025-05-30T09:24:44.586Z] server
+[2025-05-30T09:24:44.593Z] server
+[2025-05-30T12:37:59.451Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-30T12:37:59.792Z] [33m❯[39m Building...
+[2025-05-30T12:38:08.902Z] [32m✔[39m Building...
+[2025-05-30T12:38:08.955Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.30 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-OE4OONG3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.91 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m158.12 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-M3ERUOOJ.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.41 kB[39m[2m | [22m
+[32mchunk-7MUUYJXZ.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-3X56C2HA.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [9.109 seconds]
+
+[2025-05-30T12:38:09.102Z] Watch mode enabled. Watching for file changes...
+[2025-05-30T12:38:09.103Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-30T12:38:09.425Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-30T12:38:25.955Z] Platform ID: server
+[2025-05-30T12:38:25.986Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-30T12:38:26.185Z] Platform ID: server
+[2025-05-30T12:38:26.194Z] Platform ID: server
+[2025-05-30T12:38:26.219Z] haha
+[2025-05-30T12:38:26.230Z] haha
+[2025-05-30T12:38:26.294Z] server
+[2025-05-30T12:38:26.306Z] server
+[2025-05-30T12:38:43.921Z] Platform ID: server
+[2025-05-30T12:38:43.927Z] haha
+[2025-05-30T12:39:19.727Z] Platform ID: server
+[2025-05-30T12:39:19.739Z] haha
+[2025-05-30T12:39:43.590Z] Platform ID: server
+[2025-05-30T12:39:43.597Z] haha
+[2025-05-30T12:39:43.605Z] server
+[2025-05-30T12:39:43.610Z] server
+[2025-05-30T12:40:13.685Z] Platform ID: server
+[2025-05-30T12:40:13.691Z] haha
+[2025-05-30T12:40:13.698Z] server
+[2025-05-30T12:40:13.702Z] server
+[2025-05-30T12:42:10.335Z] Platform ID: server
+[2025-05-30T12:42:10.348Z] haha
+[2025-05-30T12:42:12.978Z] Platform ID: server
+[2025-05-30T12:42:12.989Z] haha
+[2025-05-30T12:45:18.186Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T12:45:19.753Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T12:45:19.760Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.06 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.17 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.566 seconds]
+
+[2025-05-30T12:45:19.901Z] Page reload sent to client(s).
+[2025-05-30T12:45:20.724Z] Platform ID: server
+[2025-05-30T12:45:20.741Z] Platform ID: server
+[2025-05-30T12:45:20.747Z] haha
+[2025-05-30T12:48:38.135Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T12:48:38.761Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T12:48:38.764Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.10 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.20 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.626 seconds]
+
+[2025-05-30T12:48:38.841Z] Page reload sent to client(s).
+[2025-05-30T12:48:39.614Z] Platform ID: server
+[2025-05-30T12:48:39.628Z] Platform ID: server
+[2025-05-30T12:48:39.637Z] haha
+[2025-05-30T12:48:44.767Z] Platform ID: server
+[2025-05-30T12:48:44.775Z] haha
+[2025-05-30T13:43:17.983Z] Platform ID: server
+[2025-05-30T13:43:18.072Z] haha
+[2025-05-30T13:44:32.138Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T13:44:35.095Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T13:44:35.148Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.23 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.34 kB[39m[2m | [22m
+
+Application bundle generation complete. [2.955 seconds]
+
+[2025-05-30T13:44:35.514Z] Page reload sent to client(s).
+[2025-05-30T13:44:35.984Z] Platform ID: server
+[2025-05-30T13:44:35.997Z] Platform ID: server
+[2025-05-30T13:44:36.005Z] haha
+[2025-05-30T13:50:51.106Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T13:50:52.582Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T13:50:52.611Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.23 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-OE4OONG3.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.91 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m158.05 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-M3ERUOOJ.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.34 kB[39m[2m | [22m
+[32mchunk-7MUUYJXZ.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-3X56C2HA.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.477 seconds]
+
+[2025-05-30T18:36:46.435Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T18:36:48.902Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T18:36:48.946Z] 
+No output file changes.
+
+Application bundle generation complete. [2.467 seconds]
+
+[2025-05-30T18:39:11.847Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T18:39:15.439Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T18:39:15.442Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.42 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.53 kB[39m[2m | [22m
+
+Application bundle generation complete. [3.592 seconds]
+
+[2025-05-30T18:39:15.893Z] Page reload sent to client(s).
+[2025-05-30T18:39:36.964Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T18:39:37.412Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T18:39:37.415Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.46 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.57 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.447 seconds]
+
+[2025-05-30T18:39:37.534Z] Page reload sent to client(s).
+[2025-05-30T18:40:50.605Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T18:40:51.250Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T18:40:51.255Z] Application bundle generation failed. [0.645 seconds]
+
+[2025-05-30T18:40:51.269Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'Subscription' is not assignable to type 'ObservableInput<any>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.ts:79:28:
+[37m      79 │             switchMap(() => [32mthis.authService.refreshToken()[37m)
+         ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  The expected type comes from the return type of this signature.
+
+    node_modules/rxjs/dist/types/internal/operators/switchMap.d.ts:2:78:
+[37m      2 │ ...t<any>>(project: [32m(value: T, index: number) => O[37m): OperatorFuncti...
+        ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Did you mean to mark this function as 'async'?
+
+    src/app/app.component.ts:79:22:
+[37m      79 │             switchMap([32m() => this.authService.refreshToken()[37m)
+         ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[2025-05-30T18:40:56.250Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T18:40:56.716Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T18:40:56.722Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.82 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-CPCNNKNJ.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.06 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.79 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-KBNZKFDR.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.93 kB[39m[2m | [22m
+[32mchunk-KYDZB2FX.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.09 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-4RLVF65I.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.466 seconds]
+
+[2025-05-30T18:40:57.581Z] Page reload sent to client(s).
+[2025-05-30T18:41:30.511Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-30T18:41:30.936Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-30T18:41:30.940Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.84 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m54.95 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.426 seconds]
+
+[2025-05-30T18:41:31.073Z] Page reload sent to client(s).
+[2025-05-30T18:41:46.618Z] Platform ID: server
+[2025-05-30T18:41:46.642Z] Platform ID: server
+[2025-05-30T18:41:46.651Z] haha
+[2025-05-30T18:41:49.909Z] Platform ID: server
+[2025-05-30T18:41:49.920Z] haha
+[2025-05-30T18:41:59.379Z] Platform ID: server
+[2025-05-30T18:41:59.387Z] haha
+[2025-05-30T18:44:05.112Z] Platform ID: server
+[2025-05-30T18:44:05.118Z] haha
+[2025-05-30T18:44:05.158Z] server
+[2025-05-30T18:44:05.163Z] server
+[2025-05-31T09:21:53.954Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-31T09:21:54.212Z] [33m❯[39m Building...
+[2025-05-31T09:22:04.015Z] [32m✔[39m Building...
+[2025-05-31T09:22:04.095Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.71 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-CPCNNKNJ.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.06 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.68 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-KBNZKFDR.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m54.82 kB[39m[2m | [22m
+[32mchunk-KYDZB2FX.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.09 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-4RLVF65I.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [9.802 seconds]
+
+[2025-05-31T09:22:04.237Z] Watch mode enabled. Watching for file changes...
+[2025-05-31T09:22:04.239Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-31T09:22:04.830Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-31T09:22:15.647Z] Platform ID: server
+[2025-05-31T09:22:15.654Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-31T09:22:16.753Z] Platform ID: server
+[2025-05-31T09:22:16.770Z] haha
+[2025-05-31T09:22:17.006Z] server
+[2025-05-31T09:22:17.016Z] server
+[2025-05-31T09:22:23.729Z] Platform ID: server
+[2025-05-31T09:22:23.747Z] haha
+[2025-05-31T09:22:45.635Z] Platform ID: server
+[2025-05-31T09:22:45.652Z] haha
+[2025-05-31T09:23:13.338Z] Platform ID: server
+[2025-05-31T09:23:13.350Z] haha
+[2025-05-31T09:24:19.709Z] Platform ID: server
+[2025-05-31T09:24:19.721Z] haha
+[2025-05-31T09:26:26.153Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T09:26:28.228Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T09:26:28.235Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.72 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m54.82 kB[39m[2m | [22m
+
+Application bundle generation complete. [2.074 seconds]
+
+[2025-05-31T09:26:29.020Z] Page reload sent to client(s).
+[2025-05-31T09:26:29.321Z] Platform ID: server
+[2025-05-31T09:26:29.340Z] Platform ID: server
+[2025-05-31T09:26:29.350Z] haha
+[2025-05-31T09:26:39.534Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T09:26:40.168Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T09:26:40.171Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.74 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m54.85 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.634 seconds]
+
+[2025-05-31T09:26:40.254Z] Page reload sent to client(s).
+[2025-05-31T09:26:41.383Z] Platform ID: server
+[2025-05-31T09:26:41.406Z] Platform ID: server
+[2025-05-31T09:26:41.416Z] haha
+[2025-05-31T09:52:13.443Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T09:52:17.048Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T09:52:17.087Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m52.98 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.09 kB[39m[2m | [22m
+
+Application bundle generation complete. [3.609 seconds]
+
+[2025-05-31T09:52:17.590Z] Page reload sent to client(s).
+[2025-05-31T09:52:18.339Z] Platform ID: server
+[2025-05-31T09:52:18.387Z] Platform ID: server
+[2025-05-31T09:52:18.393Z] haha
+[2025-05-31T10:02:00.199Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:02:01.093Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:02:01.112Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m52.98 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-CPCNNKNJ.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.06 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.95 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-KBNZKFDR.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.09 kB[39m[2m | [22m
+[32mchunk-KYDZB2FX.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.09 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-4RLVF65I.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.895 seconds]
+
+[2025-05-31T10:10:31.105Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:10:32.225Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:10:32.241Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.18 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.29 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.120 seconds]
+
+[2025-05-31T10:10:32.551Z] Page reload sent to client(s).
+[2025-05-31T10:10:33.355Z] Platform ID: server
+[2025-05-31T10:10:33.401Z] Platform ID: server
+[2025-05-31T10:10:33.411Z] haha
+[2025-05-31T10:17:12.850Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:17:13.945Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:17:13.956Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.24 kB[39m[2m | [22m
+[32mchunk-SMM7VYTD.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.06 kB[39m[2m | [22m
+[32mchunk-EVSPGG2W.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m1.64 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-4VHPDGXO.js[39m  [2m | [22m[2mheader-component[22m [2m | [22m[36m17.27 kB[39m[2m | [22m
+[32mchunk-XMLGWK26.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m55.35 kB[39m[2m | [22m
+[32mchunk-KNLQGYZ2.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.09 kB[39m[2m | [22m
+[32mchunk-3ODA65P6.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m1.67 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-5UXJC6YE.mjs[39m [2m | [22m[2mheader-component[22m [2m | [22m[36m17.31 kB[39m[2m | [22m
+[32mchunk-2KAAQSFR.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.094 seconds]
+
+[2025-05-31T10:17:14.207Z] Page reload sent to client(s).
+[2025-05-31T10:17:14.313Z] Platform ID: server
+[2025-05-31T10:17:14.336Z] Platform ID: server
+[2025-05-31T10:17:14.345Z] haha
+[2025-05-31T10:17:42.184Z] Platform ID: server
+[2025-05-31T10:17:42.193Z] haha
+[2025-05-31T10:17:45.378Z] Platform ID: server
+[2025-05-31T10:17:45.383Z] haha
+[2025-05-31T10:18:42.233Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:18:42.700Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:18:42.702Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.26 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m55.37 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.467 seconds]
+
+[2025-05-31T10:18:42.786Z] Page reload sent to client(s).
+[2025-05-31T10:18:43.303Z] Platform ID: server
+[2025-05-31T10:18:43.339Z] Platform ID: server
+[2025-05-31T10:18:43.350Z] haha
+[2025-05-31T10:18:43.403Z] server
+[2025-05-31T10:18:43.413Z] server
+[2025-05-31T10:21:56.463Z] Platform ID: server
+[2025-05-31T10:21:56.472Z] haha
+[2025-05-31T10:21:56.480Z] server
+[2025-05-31T10:21:56.482Z] server
+[2025-05-31T10:26:25.853Z] Platform ID: server
+[2025-05-31T10:26:25.859Z] haha
+[2025-05-31T10:46:59.838Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:47:01.610Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:47:01.629Z] Application bundle generation failed. [1.772 seconds]
+
+[2025-05-31T10:47:01.646Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.component.html:14:8:
+[37m      14 │         [32m<router-outlet>[37m</router-outlet>
+         ╵         [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:131:15:
+[37m      131 │   templateUrl: [32m'./app.component.html'[37m,
+          ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[2025-05-31T10:47:44.309Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:47:45.016Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:47:45.024Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.02 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-EPREF2G5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.06 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.99 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-YFKOHXB5.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.12 kB[39m[2m | [22m
+[32mchunk-5PK5N47W.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.09 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-XRIYSZEQ.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.709 seconds]
+
+[2025-05-31T10:47:45.986Z] Page reload sent to client(s).
+[2025-05-31T10:48:09.148Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:48:09.666Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:48:09.668Z] Application bundle generation failed. [0.518 seconds]
+
+[2025-05-31T10:48:09.671Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'tap'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/auth.service.ts:56:6:
+[37m      56 │       [32mtap[37m(() => console.log('🔁 Token refreshed')),
+         ╵       [32m~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2552: Cannot find name 'catchError'. Did you mean 'RTCError'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/auth.service.ts:57:6:
+[37m      57 │       [32mcatchError[37m(err => {
+         ╵       [32m~~~~~~~~~~[0m
+
+  'RTCError' is declared here.
+
+    node_modules/typescript/lib/lib.dom.d.ts:18572:12:
+[37m      18572 │ declare var [32mRTCError[37m: {
+            ╵             [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'err' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/auth.service.ts:57:17:
+[37m      57 │       catchError([32merr[37m => {
+         ╵                  [32m~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'throwError'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/shared/auth.service.ts:59:15:
+[37m      59 │         return [32mthrowError[37m(() => err);
+         ╵                [32m~~~~~~~~~~[0m
+
+[39m[22m
+[2025-05-31T10:48:26.325Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T10:48:26.681Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T10:48:26.685Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.02 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-YQP7UKJM.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.04 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.97 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-U5HI32QF.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.12 kB[39m[2m | [22m
+[32mchunk-POMSN4UR.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.08 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-TO4UMLVM.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.356 seconds]
+
+[2025-05-31T10:48:27.215Z] Page reload sent to client(s).
+[2025-05-31T10:48:50.644Z] Platform ID: server
+[2025-05-31T10:48:50.668Z] Platform ID: server
+[2025-05-31T10:48:50.709Z] server
+[2025-05-31T10:49:44.041Z] Platform ID: server
+[2025-05-31T10:50:02.451Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-31T10:50:02.648Z] [33m❯[39m Building...
+[2025-05-31T10:50:09.576Z] [32m✔[39m Building...
+[2025-05-31T10:50:09.631Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.02 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-YQP7UKJM.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.04 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m157.97 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-U5HI32QF.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.12 kB[39m[2m | [22m
+[32mchunk-POMSN4UR.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.08 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-TO4UMLVM.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [6.928 seconds]
+
+[2025-05-31T10:50:09.737Z] Watch mode enabled. Watching for file changes...
+[2025-05-31T10:50:09.739Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-31T10:50:10.321Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-31T10:50:19.370Z] Platform ID: server
+[2025-05-31T10:50:19.381Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-31T10:50:19.470Z] Platform ID: server
+[2025-05-31T10:52:15.967Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-05-31T10:52:16.151Z] [33m❯[39m Building...
+[2025-05-31T10:52:21.658Z] [32m✔[39m Building...
+[2025-05-31T10:52:21.688Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m53.26 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-SMM7VYTD.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m5.06 kB[39m[2m | [22m
+[32mchunk-EVSPGG2W.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.64 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m158.79 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-4VHPDGXO.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-XMLGWK26.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m55.37 kB[39m[2m | [22m
+[32mchunk-KNLQGYZ2.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m5.09 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-3ODA65P6.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.67 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-5UXJC6YE.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-2KAAQSFR.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [5.506 seconds]
+
+[2025-05-31T10:52:21.780Z] Watch mode enabled. Watching for file changes...
+[2025-05-31T10:52:21.781Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-05-31T10:52:22.137Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-05-31T10:56:38.383Z] Platform ID: server
+[2025-05-31T10:56:38.401Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-05-31T10:56:38.531Z] Platform ID: server
+[2025-05-31T10:56:38.563Z] haha
+[2025-05-31T10:56:42.384Z] Platform ID: server
+[2025-05-31T10:56:42.390Z] haha
+[2025-05-31T11:00:47.617Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T11:00:49.113Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T11:00:49.124Z] 
+No output file changes.
+
+Application bundle generation complete. [1.496 seconds]
+
+[2025-05-31T11:02:03.140Z] Platform ID: server
+[2025-05-31T11:02:03.157Z] haha
+[2025-05-31T11:05:49.877Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T11:05:50.461Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T11:05:50.464Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.26 kB[39m[2m | [22m
+[32mchunk-YTAMN3FJ.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m4.91 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-4T7DBJYT.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m55.37 kB[39m[2m | [22m
+[32mchunk-ULBAAPOH.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m4.94 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-G4ROACWC.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.584 seconds]
+
+[2025-05-31T11:05:50.647Z] Page reload sent to client(s).
+[2025-05-31T11:05:51.373Z] Platform ID: server
+[2025-05-31T11:05:51.403Z] Platform ID: server
+[2025-05-31T11:05:51.411Z] haha
+[2025-05-31T11:12:06.990Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T11:12:07.340Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T11:12:07.342Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.26 kB[39m[2m | [22m
+[32mchunk-I3YYK46A.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.02 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-4NZAZBI3.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m55.37 kB[39m[2m | [22m
+[32mchunk-XLIGZ4RT.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.06 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-CMHPYLP5.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.350 seconds]
+
+[2025-05-31T11:12:07.428Z] Page reload sent to client(s).
+[2025-05-31T11:12:08.355Z] Platform ID: server
+[2025-05-31T11:12:08.376Z] Platform ID: server
+[2025-05-31T11:12:08.382Z] haha
+[2025-05-31T11:15:11.446Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T11:15:12.084Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T11:15:12.086Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.85 kB[39m[2m | [22m
+[32mchunk-RCXS5AL6.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.02 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m1.08 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m  [2m | [22m[2mheader-component[22m [2m | [22m[36m17.27 kB[39m[2m | [22m
+[32mchunk-XRXTQYAJ.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m55.95 kB[39m[2m | [22m
+[32mchunk-MBTKWLYS.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.06 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m [2m | [22m[2mheader-component[22m [2m | [22m[36m17.31 kB[39m[2m | [22m
+[32mchunk-4FQILI53.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.638 seconds]
+
+[2025-05-31T11:15:12.203Z] Page reload sent to client(s).
+[2025-05-31T11:15:12.311Z] Platform ID: server
+[2025-05-31T11:15:12.341Z] Platform ID: server
+[2025-05-31T11:15:12.408Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:15:30.711Z] Platform ID: server
+[2025-05-31T11:15:30.731Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:24:05.450Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T11:24:06.022Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T11:24:06.025Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.90 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.01 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.572 seconds]
+
+[2025-05-31T11:24:06.110Z] Page reload sent to client(s).
+[2025-05-31T11:24:06.377Z] Platform ID: server
+[2025-05-31T11:24:06.393Z] Platform ID: server
+[2025-05-31T11:24:06.398Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:24:21.103Z] Platform ID: server
+[2025-05-31T11:24:21.110Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:24:35.838Z] Platform ID: server
+[2025-05-31T11:24:35.846Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:24:35.884Z] server
+[2025-05-31T11:24:35.889Z] server
+[2025-05-31T11:24:42.876Z] Platform ID: server
+[2025-05-31T11:24:42.893Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:29:08.041Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T11:29:08.386Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T11:29:08.388Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m53.95 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.06 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.345 seconds]
+
+[2025-05-31T11:29:08.468Z] Page reload sent to client(s).
+[2025-05-31T11:29:09.359Z] Platform ID: server
+[2025-05-31T11:29:09.374Z] Platform ID: server
+[2025-05-31T11:29:09.382Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:29:11.972Z] Platform ID: server
+[2025-05-31T11:29:11.979Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:29:28.926Z] Platform ID: server
+[2025-05-31T11:29:28.932Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:29:28.938Z] server
+[2025-05-31T11:29:28.942Z] server
+[2025-05-31T11:29:34.129Z] Platform ID: server
+[2025-05-31T11:29:34.133Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:29:34.995Z] Platform ID: server
+[2025-05-31T11:29:35.004Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T11:29:39.418Z] Platform ID: server
+[2025-05-31T11:29:39.423Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:38:49.748Z] Platform ID: server
+[2025-05-31T15:38:49.894Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:39:07.241Z] Platform ID: server
+[2025-05-31T15:39:07.254Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:42:54.398Z] Platform ID: server
+[2025-05-31T15:42:54.458Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:43:20.011Z] Platform ID: server
+[2025-05-31T15:43:20.029Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:43:20.116Z] server
+[2025-05-31T15:43:20.126Z] server
+[2025-05-31T15:43:28.491Z] Platform ID: server
+[2025-05-31T15:43:28.515Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:53:49.512Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T15:53:50.999Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T15:53:51.013Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.95 kB[39m[2m | [22m
+[32mchunk-TRC664KU.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.14 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-BNUS6MID.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m56.06 kB[39m[2m | [22m
+[32mchunk-2QEBSC6V.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.17 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-EYPHUX4E.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.490 seconds]
+
+[2025-05-31T15:53:51.321Z] Page reload sent to client(s).
+[2025-05-31T15:53:52.348Z] Platform ID: server
+[2025-05-31T15:53:52.366Z] Platform ID: server
+[2025-05-31T15:53:52.372Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:53:54.490Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T15:53:55.001Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T15:53:55.004Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.95 kB[39m[2m | [22m
+[32mchunk-UOVIPZDO.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.14 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-BUJ65LKA.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m56.06 kB[39m[2m | [22m
+[32mchunk-LSPCJWXH.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.17 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-FPQKVNIH.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.510 seconds]
+
+[2025-05-31T15:53:55.195Z] Page reload sent to client(s).
+[2025-05-31T15:53:55.356Z] Platform ID: server
+[2025-05-31T15:53:55.377Z] Platform ID: server
+[2025-05-31T15:53:55.383Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T15:58:48.174Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T15:58:50.176Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T15:58:50.208Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m53.95 kB[39m[2m | [22m
+[32mchunk-GZ6CGB2E.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.14 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-5IGQJU4L.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m56.06 kB[39m[2m | [22m
+[32mchunk-H34P2GPN.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.17 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-XPA7KRYL.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [2.007 seconds]
+
+[2025-05-31T15:58:50.641Z] Page reload sent to client(s).
+[2025-05-31T15:58:51.408Z] Platform ID: server
+[2025-05-31T15:58:51.480Z] Platform ID: server
+[2025-05-31T15:58:51.507Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:99:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T16:08:14.528Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:08:15.385Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:08:15.391Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.24 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.859 seconds]
+
+[2025-05-31T16:08:15.596Z] Page reload sent to client(s).
+[2025-05-31T16:08:16.330Z] Platform ID: server
+[2025-05-31T16:08:16.353Z] Platform ID: server
+[2025-05-31T16:08:16.365Z] [1m[31mERROR ReferenceError: document is not defined
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:102:32)
+    at Array.map (<anonymous>)
+    at _AppComponent.setupActivityDetection (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:102:7)
+    at _AppComponent.ngOnInit (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:61:10)
+    at callHookInternal (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3316:10)
+    at callHook (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3331:7)
+    at callHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3305:9)
+    at executeInitAndCheckHooks (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:3274:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9062:11)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:9221:5)[39m[22m
+[2025-05-31T16:08:37.522Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:08:38.124Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:08:38.126Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m54.25 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m56.36 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.602 seconds]
+
+[2025-05-31T16:08:38.213Z] Page reload sent to client(s).
+[2025-05-31T16:08:38.347Z] Platform ID: server
+[2025-05-31T16:08:38.359Z] Platform ID: server
+[2025-05-31T16:08:49.341Z] Platform ID: server
+[2025-05-31T16:08:59.100Z] Platform ID: server
+[2025-05-31T16:09:03.318Z] Platform ID: server
+[2025-05-31T16:09:14.147Z] Platform ID: server
+[2025-05-31T16:11:01.256Z] Platform ID: server
+[2025-05-31T16:12:52.488Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-05-31T16:12:52.942Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-05-31T16:12:52.946Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m[36m54.25 kB[39m[2m | [22m
+[32mchunk-ARA4JOCU.js[39m  [2m | [22m[2m-[22m                [2m | [22m [36m5.13 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-6EGBEFL4.js[39m  [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m      [2m | [22m[36m56.36 kB[39m[2m | [22m
+[32mchunk-EK5MD54N.mjs[39m [2m | [22m[2m-[22m                [2m | [22m [36m5.16 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-Q6IV2S2J.mjs[39m [2m | [22m[2mprofile-component[22m[2m | [22m [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.453 seconds]
+
+[2025-05-31T16:12:53.047Z] Page reload sent to client(s).
+[2025-05-31T16:12:53.362Z] Platform ID: server
+[2025-05-31T16:12:53.373Z] Platform ID: server
+[2025-05-31T16:13:00.816Z] Platform ID: server
