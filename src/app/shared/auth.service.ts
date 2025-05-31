@@ -1,65 +1,44 @@
-import { Injectable, OnDestroy, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, of, Subscription } from 'rxjs';
-import { catchError, map, switchMap } from 'rxjs/operators';
-import { Store } from '@ngrx/store';
-import { AppState } from '../app.state';
-import { loginSuccess, logout } from '../authentication/auth.actions';
-import { selectIsAuthenticated } from '../authentication/auth.selectors';
-import { ApiService } from './api.service';
-import { UtilisatorDTO } from '../model/UtilisatorDTO';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, switchMap,of, map } from 'rxjs';
+import { environment } from '../../environment/environment';
 
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class AuthService{
+export class AuthService {
 
+  
+apiUrl: string = environment.apiBaseUrl;
+private refreshTheToken = `${this.apiUrl}/auth/refresh-token-user`;
+private aboutToExpire = `${this.apiUrl}/auth/about-to-expire`;
+private authStatus = `${this.apiUrl}/auth/status`;
 
+  constructor(private http: HttpClient) { }
 
-  constructor(private store: Store<AppState>, private apiservice: ApiService) {
-
+  refreshToken(): Observable<any> {
+    return this.http.post(this.refreshTheToken, {});
   }
 
 
-
-
-  // Call the backend to check if the user is authenticated
-  checkAuthStatus(): Observable<any> {
-
-    return this.apiservice.validateUserToken().pipe(
-        // Map the response to extract the user and authenticated status
-        map((response: { user: UtilisatorDTO, authenticated: boolean }) => {
-            if (response.authenticated) {
-                console.log('User authenticated:', response.authenticated);
-                this.store.dispatch(loginSuccess({ user: response.user })); // Dispatch login success action
-            }
-            else {
-                console.log('User NOT authenticated:', response.authenticated);
-                this.store.dispatch(logout()); // Dispatch logout action
-            }
-            console.log('User authenticated:', response.authenticated);
-            return response // Return the response as an Observable
-        }),
-        catchError((error) => {
-          console.error('Error checking authentication status eere:', error);
-          return of({ user: null, authenticated: false }); // Return a default value in case of error
-        })
+  aboutToExpireFunction(): Observable<boolean>{
+    return this.http.get<{[key: string]: boolean}>(this.aboutToExpire).pipe(
+      map(response => response['30 seconds left before expiration :'] || false)
     );
   }
 
-
-
-  setAuthenticated(): Subscription{
-    return this.checkAuthStatus().subscribe((response) => {
-      if (response.authenticated) {
-        this.store.dispatch(loginSuccess({ user: response.user }));
-      } else {
-        this.store.dispatch(logout());
-      }
-    })
+  getAuthStatus(): Observable<any>{
+    return this.http.get<{ exp: number }>(this.authStatus);
 
   }
+
+
+  
 
 
 }

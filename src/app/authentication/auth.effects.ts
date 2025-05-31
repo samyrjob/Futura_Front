@@ -95,9 +95,7 @@ loginFailure$;
           this.actions$.pipe(
             ofType(logout),
             tap(() => {
-              // if (isPlatformBrowser(this.platformId)){
-              //   localStorage.setItem('isLoggedIn', 'false');  // Add this line
-              // }
+       
               this.apiService.logout().subscribe(
                 {
                     next: (response) => console.log("disconnected successfully bro ! (from new auth effects "),
