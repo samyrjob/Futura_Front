@@ -2425,6 +2425,7 @@ Application bundle generation complete. [0.453 seconds]
 [2025-05-31T16:12:53.362Z] Platform ID: server
 [2025-05-31T16:12:53.373Z] Platform ID: server
 [2025-05-31T16:13:00.816Z] Platform ID: server
+<<<<<<< HEAD
 [2025-05-31T16:22:44.953Z] [33m❯[39m Changes detected. Rebuilding...
 [2025-05-31T16:22:47.512Z] [32m✔[39m Changes detected. Rebuilding...
 [2025-05-31T16:22:47.557Z] [35mBrowser bundles[39m    
@@ -4054,3 +4055,5 @@ Application bundle generation complete. [0.801 seconds]
 [2025-06-02T09:48:38.910Z] server
 [2025-06-02T09:48:38.921Z] server
 [2025-06-02T09:52:44.381Z] Platform ID: server
+=======
+>>>>>>> 45bbeb6ec99ca1d06baf78993fa6721c0e905d8b

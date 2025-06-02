@@ -4,6 +4,10 @@ import { HttpInterceptor, HttpEvent, HttpRequest, HttpHandler, HttpErrorResponse
 import { Router } from "@angular/router";
 import { ApiService } from "../shared/api.service";
 import { MatSnackBar } from '@angular/material/snack-bar'; // Or your notification service
+import { Store } from "@ngrx/store";
+import { AppState } from "../app.state";
+import { selectIsAuthenticated } from "./auth.selectors";
+import { AuthService } from "../shared/auth.service";
 
 
 
@@ -11,22 +15,17 @@ import { MatSnackBar } from '@angular/material/snack-bar'; // Or your notificati
 export class AuthInterceptor implements HttpInterceptor {
   private isRefreshing = false;
 
-  constructor(private router: Router, private apiService: ApiService, private snackBar: MatSnackBar) {}
+  constructor(private router: Router, private apiService: ApiService, private snackBar: MatSnackBar, private store: Store<AppState>, private authService: AuthService) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
 
-
-    // if (req.url.includes('validate-token-user')){
-    //   return next.handle(req); // skip 401 handling
-    // }
-    
     const authReq = req.clone({ withCredentials: true });
 
     return next.handle(authReq).pipe(
       catchError((error: HttpErrorResponse) => {
-        if (error.status === 401) {
-          return this.handle401Error(authReq, next, error);
+        if (error.status === 401 && !(req.url.includes('/api/auth/refresh-token-user') || req.url.includes('/api/auth/about-to-expire') || req.url.includes('/auth/status'))) {
+            return this.handle401Error(authReq, next, error);
         }
         return throwError(() => error);
       })
