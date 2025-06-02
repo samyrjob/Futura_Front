@@ -12,6 +12,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
 import { selectIsAuthenticated } from './auth.selectors';
+import { AppComponent } from '../app.component';
 
 @Injectable()
 export class AuthEffects {
@@ -41,8 +42,9 @@ loginFailure$;
             mergeMap(({ email, password }) =>
               this.apiService.DoLogIn({ email, password }).pipe(
                 map(response => {
+               
                   const user = response.body.user as UtilisatorDTO;
-                  console.log("eee")
+                  console.log("successfully connected")
                   return loginSuccess({ user });
                 }),
                 catchError((error) => 
@@ -65,7 +67,11 @@ loginFailure$;
               // if (isPlatformBrowser(this.platformId)){
               //   localStorage.setItem('isLoggedIn', 'true');  // Add this line
               // }
-              this.router.navigate(['/profile'])})
+            
+              this.router.navigate(['/profile'])
+
+            
+            })
           ),
           { dispatch: false }
         );
