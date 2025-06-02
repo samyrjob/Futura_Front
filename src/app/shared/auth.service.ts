@@ -1,65 +1,97 @@
-import { Injectable, OnDestroy, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, of, Subscription } from 'rxjs';
-import { catchError, map, switchMap } from 'rxjs/operators';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, switchMap,of, map, Subscription, Subject, debounceTime } from 'rxjs';
+import { environment } from '../../environment/environment';
+import { selectIsAuthenticated } from '../authentication/auth.selectors';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { loginSuccess, logout } from '../authentication/auth.actions';
-import { selectIsAuthenticated } from '../authentication/auth.selectors';
-import { ApiService } from './api.service';
-import { UtilisatorDTO } from '../model/UtilisatorDTO';
+import { logout } from '../authentication/auth.actions';
 
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class AuthService{
+export class AuthService {
+
+public  static logoutSub?: Subscription;
+public static activitySubject = new Subject<void>();
+static readonly INACTIVITY_LIMIT = 1 * 60 * 1000; // 1 minute
 
 
+apiUrl: string = environment.apiBaseUrl;
+private refreshTheToken = `${this.apiUrl}/auth/refresh-token-user`;
+private aboutToExpire = `${this.apiUrl}/auth/about-to-expire`;
+private authStatus = `${this.apiUrl}/auth/status`;
 
-  constructor(private store: Store<AppState>, private apiservice: ApiService) {
+  constructor(private http: HttpClient, private store: Store<AppState>) { }
 
+  refreshToken(): Observable<any> {
+    return this.http.post(this.refreshTheToken, {});
   }
 
 
 
 
-  // Call the backend to check if the user is authenticated
-  checkAuthStatus(): Observable<any> {
+  getAuthStatus(): Observable<any>{
+    return this.http.get<{ exp: number }>(this.authStatus);
 
-    return this.apiservice.validateUserToken().pipe(
-        // Map the response to extract the user and authenticated status
-        map((response: { user: UtilisatorDTO, authenticated: boolean }) => {
-            if (response.authenticated) {
-                console.log('User authenticated:', response.authenticated);
-                this.store.dispatch(loginSuccess({ user: response.user })); // Dispatch login success action
-            }
-            else {
-                console.log('User NOT authenticated:', response.authenticated);
-                this.store.dispatch(logout()); // Dispatch logout action
-            }
-            console.log('User authenticated:', response.authenticated);
-            return response // Return the response as an Observable
-        }),
-        catchError((error) => {
-          console.error('Error checking authentication status eere:', error);
-          return of({ user: null, authenticated: false }); // Return a default value in case of error
-        })
-    );
   }
 
 
+  static activitySubjectLogOut(store: Store<AppState>): Subscription{
 
-  setAuthenticated(): Subscription{
-    return this.checkAuthStatus().subscribe((response) => {
-      if (response.authenticated) {
-        this.store.dispatch(loginSuccess({ user: response.user }));
-      } else {
-        this.store.dispatch(logout());
-      }
+    
+    // Handle inactivity logout
+    return this.activitySubject.pipe(
+      debounceTime(this.INACTIVITY_LIMIT),
+      // takeUntil(this.destroy$)
+    ).subscribe(()  => {
+      this.handleInactivityLogout(store);
     })
 
+}
+
+  static checklogoutSubValue(store: Store<AppState>) :  void{
+    store.select(selectIsAuthenticated).subscribe(
+      (response) => {
+        if (response){
+          if (AuthService.logoutSub !== undefined){
+            AuthService.activitySubjectLogOut(store).unsubscribe();
+           
+          }
+          else {
+            AuthService.logoutSub = undefined;
+            AuthService.activitySubjectLogOut(store);
+       
+          }
+      }
+      else {
+          AuthService.activitySubjectLogOut(store).unsubscribe();
+          AuthService.logoutSub = new Subscription();
+      
+      }
+      }
+    )
+
   }
+
+  private static handleInactivityLogout(store: Store<AppState>): void {
+    // if (this.logoutSub) {this.logoutSub.unsubscribe()}
+    // else {
+  
+      // this.logoutSub =
+       store.select(selectIsAuthenticated).subscribe((isAuthenticated) => {
+        if (isAuthenticated) {
+          store.dispatch(logout());
+        }
+      });
+    }
+
+
 
 
 }

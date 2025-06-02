@@ -1,57 +1,71 @@
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
-import { RouterOutlet } from '@angular/router';
-import { ApiService } from './shared/api.service';
-import { JwtHelperService } from '@auth0/angular-jwt';
-import { AppState } from './app.state';
-import { Store, StoreModule } from '@ngrx/store';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { InactivityService } from './shared/inactivity.service';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { AuthService } from './shared/auth.service';
-import { logout } from './authentication/auth.actions';
+import { debounceTime, filter, Subject, switchMap, takeUntil } from 'rxjs';
 import { selectIsAuthenticated } from './authentication/auth.selectors';
+import { AuthService } from './shared/auth.service';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-root',
-//   template: `
-//   <h1>Angular Standalone App</h1>
-//   <router-outlet></router-outlet>
-// `,
-  imports: [ RouterOutlet, RouterModule, CommonModule, StoreModule],
-  standalone: true,
+    imports: [RouterOutlet, RouterModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
+export class AppComponent implements OnInit, OnDestroy {
+  constructor(private inactivityService: InactivityService, private store: Store<AuthService>, private authService: AuthService) {}
 
-
-
-export class AppComponent{
-  title = 'Welcome to Futura';
-  inactivityTimeout: any;
-  readonly INACTIVITY_LIMIT = 1*60*1000; // 1 minute
-  displayconsole: any;
-
-
-
-
-
-
-  constructor(
-     private store: Store<AppState>, private authService: AuthService) {
-
-  }
-
-
-      
+  private destroy$ = new Subject<void>();
 
 
   ngOnInit(): void {
-    // Subscribe to the Observable
-    console.log("haha")
+    this.inactivityService.startMonitoring();
+    this.triggerExpDate();
+
+
+  }
+
+  ngOnDestroy(): void {
+    this.inactivityService.stopMonitoring();
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
 
-  
+  triggerExpDate(): void{
 
+
+    // Handle token refresh on activity
+    AuthService.activitySubject.pipe(
+      debounceTime(500), // Debounce rapid events
+      // distinctUntilChanged(), // Avoid duplicate events
+      switchMap(() =>
+        this.store.select(selectIsAuthenticated).pipe(
+          filter(isAuthenticated => isAuthenticated), // Only proceed if authenticated
+          // switchMap(() => this.authService.aboutToExpireFunction()),
+          switchMap(()=> this.authService.getAuthStatus())
+          // filter(aboutToExpire => aboutToExpire), // Only proceed if token is about to expire
+          // switchMap(() => this.authService.refreshToken())
+        )
+      ),
+      takeUntil(this.destroy$)
+    ).subscribe({
+      next: (res) =>  {
+        const exp = res.exp;
+        console.log('🔁 status obtained successfully : \n'),
+        console.log(exp);
+        const current = new Date();
+        const timestamp = current.getTime()/1000;
+        if (exp - timestamp <= 30){
+          console.log("less or equal 30 sc left before expiration of the token !")
+          this.authService.refreshToken().subscribe();
+        }
+
+      },
+      error: (err) => console.error('❌ Error getting the status:', err)
+    });
+  }
 
 
   @HostListener('document:mousemove')
@@ -59,26 +73,17 @@ export class AppComponent{
   @HostListener('document:click')
   @HostListener('document:scroll')
   @HostListener('document:touchstart')
-  resetInactivityTimer(){
-  
-
-    clearTimeout(this.inactivityTimeout);
-    this.inactivityTimeout = setTimeout(() => this.handleInactivityLogout(), this.INACTIVITY_LIMIT);
+  onUserActivity(): void {
+    AuthService.activitySubject.next();
   }
 
 
-  handleInactivityLogout() {
 
-    this.store.select(selectIsAuthenticated).subscribe((isAuthenticated) => {
 
-      if (isAuthenticated) {
-        this.store.dispatch(logout());
-      }
 
-  })
-  
-    
 
-}
+
+
+
 
 }
