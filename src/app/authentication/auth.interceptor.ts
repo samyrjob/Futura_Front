@@ -6,7 +6,6 @@ import { ApiService } from "../shared/api.service";
 import { MatSnackBar } from '@angular/material/snack-bar'; // Or your notification service
 import { Store } from "@ngrx/store";
 import { AppState } from "../app.state";
-import { selectIsAuthenticated } from "./auth.selectors";
 import { AuthService } from "../shared/auth.service";
 
 

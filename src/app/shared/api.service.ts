@@ -64,9 +64,7 @@ apiUrl: string = environment.apiBaseUrl;
       return this.http.get<{ user: UtilisatorDTO, authenticated: boolean }>(this.userAndValidationToken)
     }
 
-
-
-
+    
 
     getUser(): Observable<UtilisatorDTO>{
       return this.validateUserToken().pipe(

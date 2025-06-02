@@ -4057,3 +4057,270 @@ Application bundle generation complete. [0.801 seconds]
 [2025-06-02T09:52:44.381Z] Platform ID: server
 =======
 >>>>>>> 45bbeb6ec99ca1d06baf78993fa6721c0e905d8b
+[2025-06-02T11:06:30.780Z] [1m[33mComponent HMR has been enabled.
+If you encounter application reload issues, you can manually reload the page to bypass HMR and/or disable this feature with the `--no-hmr` command line option.
+Please consider reporting any issues you encounter here: https://github.com/angular/angular-cli/issues
+[39m[22m
+[2025-06-02T11:06:31.010Z] [33m❯[39m Building...
+[2025-06-02T11:06:37.264Z] [32m✔[39m Building...
+[2025-06-02T11:06:37.306Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m55.97 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-MB2K76J6.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m160.81 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-ZNK7YPSN.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m58.07 kB[39m[2m | [22m
+[32mchunk-UISTNCTU.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.97 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-JQ3XIHDF.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [6.254 seconds]
+
+[2025-06-02T11:06:37.417Z] Watch mode enabled. Watching for file changes...
+[2025-06-02T11:06:37.419Z] NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2025-06-02T11:06:37.854Z]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2025-06-02T11:06:47.212Z] Platform ID: server
+[2025-06-02T11:06:47.225Z] [1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[2025-06-02T11:06:47.332Z] Platform ID: server
+[2025-06-02T11:15:41.150Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T11:15:45.522Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T11:15:45.554Z] Application bundle generation failed. [4.389 seconds]
+
+[2025-06-02T11:15:45.611Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'email' does not exist in type '{ payload: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/register/register.component.ts:45:38:
+[37m      45 │           this.store.dispatch(login({ [32memail[37m, password }));
+         ╵                                       [32m~~~~~[0m
+
+[39m[22m
+[2025-06-02T11:15:58.345Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T11:15:59.702Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T11:15:59.720Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m56.07 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-MB2K76J6.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m160.92 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-ZNK7YPSN.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m58.18 kB[39m[2m | [22m
+[32mchunk-UISTNCTU.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.97 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-JQ3XIHDF.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.357 seconds]
+
+[2025-06-02T11:16:01.301Z] Page reload sent to client(s).
+[2025-06-02T11:16:06.571Z] Platform ID: server
+[2025-06-02T11:16:06.603Z] Platform ID: server
+[2025-06-02T11:16:09.648Z] Platform ID: server
+[2025-06-02T11:18:04.884Z] Platform ID: server
+[2025-06-02T11:23:49.909Z] Platform ID: server
+[2025-06-02T11:31:19.262Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T11:31:22.945Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T11:31:22.987Z] 
+No output file changes.
+
+Application bundle generation complete. [3.697 seconds]
+
+[2025-06-02T11:31:36.080Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T11:31:36.616Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T11:31:36.624Z] 
+No output file changes.
+
+Application bundle generation complete. [0.535 seconds]
+
+[2025-06-02T11:32:02.338Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T11:32:03.210Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T11:32:03.229Z] 
+No output file changes.
+
+Application bundle generation complete. [0.871 seconds]
+
+[2025-06-02T11:57:34.506Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T11:57:37.736Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T11:57:37.774Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m56.15 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m58.26 kB[39m[2m | [22m
+
+Application bundle generation complete. [3.252 seconds]
+
+[2025-06-02T11:57:38.450Z] Page reload sent to client(s).
+[2025-06-02T11:57:38.657Z] Platform ID: server
+[2025-06-02T11:57:38.721Z] Platform ID: server
+[2025-06-02T11:57:44.888Z] Platform ID: server
+[2025-06-02T12:10:55.515Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T12:10:58.465Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T12:10:58.490Z] Application bundle generation failed. [2.962 seconds]
+
+[2025-06-02T12:10:58.507Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/authentication/auth.effects.ts:40:40:
+[37m      40 │               this.apiService.DoLogIn({ [32memail[37m, password }).pipe(
+         ╵                                         [32m~~~~~[0m
+
+  The expected type comes from property 'email' which is declared here on type 'LoginRequestDTO'
+
+    src/app/model/LoginRequestDTO.ts:2:4:
+[37m      2 │     [32memail[37m: string;
+        ╵     [32m~~~~~[0m
+
+[39m[22m
+[2025-06-02T12:11:01.271Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T12:11:01.851Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T12:11:01.853Z] Application bundle generation failed. [0.580 seconds]
+
+[2025-06-02T12:11:01.861Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/authentication/auth.effects.ts:40:40:
+[37m      40 │               this.apiService.DoLogIn({ [32memail[37m, password }).pipe(
+         ╵                                         [32m~~~~~[0m
+
+  The expected type comes from property 'email' which is declared here on type 'LoginRequestDTO'
+
+    src/app/model/LoginRequestDTO.ts:2:4:
+[37m      2 │     [32memail[37m: string;
+        ╵     [32m~~~~~[0m
+
+[39m[22m
+[2025-06-02T12:11:05.382Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T12:11:06.124Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T12:11:06.130Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m56.15 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-MB2K76J6.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m161.00 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-ZNK7YPSN.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m58.26 kB[39m[2m | [22m
+[32mchunk-UISTNCTU.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.97 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-JQ3XIHDF.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.742 seconds]
+
+[2025-06-02T12:11:07.237Z] [1m[31mTypeError: ɵgetOrCreateAngularServerApp is not a function
+    at _AngularAppEngine.eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:11914:25)
+    at Generator.next (<anonymous>)
+    at fulfilled (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:74:24)
+    at _ZoneDelegate.invoke (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:312:158)
+    at ZoneImpl.run (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:108:35)
+    at eval (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:1011:30)
+    at _ZoneDelegate.invokeTask (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:338:171)
+    at ZoneImpl.runTask (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:146:37)
+    at drainMicroTaskQueue (eval at runInlinedModule (file:///C:/Users/notre/OneDrive%20-%20University%20of%20Chester/isometric%20project/landingpage/node_modules/@angular/build/node_modules/vite/dist/node/module-runner.js:1049:11), <anonymous>:493:23)[39m[22m
+[2025-06-02T12:11:07.270Z] Page reload sent to client(s).
+[2025-06-02T12:11:07.584Z] Platform ID: server
+[2025-06-02T12:16:12.624Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T12:16:14.144Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T12:16:14.158Z] Application bundle generation failed. [1.517 seconds]
+
+[2025-06-02T12:16:14.166Z] [1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2306: File 'C:/Users/notre/OneDrive - University of Chester/isometric project/landingpage/src/app/app.actions.ts' is not a module.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/register/register.component.ts:8:22:
+[37m      8 │ import { login } from [32m'../app.actions'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[2025-06-02T12:16:34.084Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T12:16:34.764Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T12:16:34.773Z] [35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.js[39m        [2m | [22m[2mpolyfills[22m        [2m | [22m [36m90.20 kB[39m[2m | [22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m             [2m | [22m [36m56.37 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m           [2m | [22m  [36m8.63 kB[39m[2m | [22m
+[32mchunk-MB2K76J6.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m4.94 kB[39m[2m | [22m
+[32mchunk-CZJLB7T5.js[39m   [2m | [22m[2m-[22m                [2m | [22m  [36m1.08 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m    [2m | [22m[1m161.22 kB[22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-7KSTXVHE.js[39m   [2m | [22m[2mheader-component[22m [2m | [22m [36m17.27 kB[39m[2m | [22m
+[32mchunk-ZNK7YPSN.js[39m   [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.83 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m [2m | [22m[36m570.97 kB[39m[2m | [22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m      [2m | [22m [36m58.48 kB[39m[2m | [22m
+[32mchunk-UISTNCTU.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m4.97 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m           [2m | [22m  [36m1.86 kB[39m[2m | [22m
+[32mchunk-XZXRA2IB.mjs[39m  [2m | [22m[2m-[22m                [2m | [22m  [36m1.11 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m    [2m | [22m[1mNames[22m            [2m | [22m [1mRaw size[22m
+[32mchunk-O3CO2HBR.mjs[39m  [2m | [22m[2mheader-component[22m [2m | [22m [36m17.31 kB[39m[2m | [22m
+[32mchunk-JQ3XIHDF.mjs[39m  [2m | [22m[2mprofile-component[22m[2m | [22m  [36m7.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.680 seconds]
+
+[2025-06-02T12:16:35.840Z] Page reload sent to client(s).
+[2025-06-02T12:16:54.240Z] [33m❯[39m Changes detected. Rebuilding...
+[2025-06-02T12:16:55.017Z] [32m✔[39m Changes detected. Rebuilding...
+[2025-06-02T12:16:55.019Z] [35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m56.26 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m58.37 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.776 seconds]
+
+[2025-06-02T12:16:55.080Z] Page reload sent to client(s).
+[2025-06-02T12:17:02.722Z] Platform ID: server
+[2025-06-02T12:17:02.740Z] Platform ID: server
+[2025-06-02T12:17:09.027Z] Platform ID: server
+[2025-06-02T12:17:12.747Z] Platform ID: server
