@@ -24,7 +24,7 @@ export class AuthInterceptor implements HttpInterceptor {
 
     return next.handle(authReq).pipe(
       catchError((error: HttpErrorResponse) => {
-        if (error.status === 401 && !(req.url.includes('/api/auth/refresh-token-user') || req.url.includes('/api/auth//about-to-expire'))) {
+        if (error.status === 401 && !(req.url.includes('/api/auth/refresh-token-user') || req.url.includes('/api/auth/about-to-expire') || req.url.includes('/auth/status'))) {
             return this.handle401Error(authReq, next, error);
         }
         return throwError(() => error);
