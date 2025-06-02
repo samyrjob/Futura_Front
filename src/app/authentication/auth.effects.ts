@@ -2,17 +2,14 @@ import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { ApiService } from '../shared/api.service';
 import { login, loginSuccess, loginFailure, logout } from './auth.actions';
-import { catchError, filter, map, mergeMap, take, tap } from 'rxjs/operators';
-import { EMPTY, of } from 'rxjs';
+import { catchError, map, mergeMap, tap } from 'rxjs/operators';
+import { of } from 'rxjs';
 import { Router } from '@angular/router';
-import { jwtDecode } from 'jwt-decode';
 import { UtilisatorDTO } from '../model/UtilisatorDTO';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { isPlatformBrowser } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { selectIsAuthenticated } from './auth.selectors';
-import { AppComponent } from '../app.component';
+
 
 @Injectable()
 export class AuthEffects {
@@ -42,7 +39,7 @@ loginFailure$;
             mergeMap(({ email, password }) =>
               this.apiService.DoLogIn({ email, password }).pipe(
                 map(response => {
-               
+                 
                   const user = response.body.user as UtilisatorDTO;
                   console.log("successfully connected")
                   return loginSuccess({ user });
@@ -113,22 +110,6 @@ loginFailure$;
           { dispatch: false }
         );
 
-        // this.logout$ = createEffect(() =>
-        //   this.actions$.pipe(
-        //     ofType(logout),
-        //     tap(() => {
-        //       // Only attempt logout if we think we're still authenticated
-        //       this.store.select(selectIsAuthenticated).pipe(
-        //         take(1),
-        //         filter(isAuthenticated => isAuthenticated),
-        //         mergeMap(() => this.apiService.logout())
-        //       ).subscribe({
-        //         next: () => console.log("Disconnected successfully"),
-        //         error: (err) => console.log("Logout failed", err)
-        //       });
-        //     })
-        //   ),
-        //   { dispatch: false }
-        // );
+        
   }
 }

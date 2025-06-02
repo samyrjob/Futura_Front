@@ -22,9 +22,9 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.inactivityService.startMonitoring();
     this.triggerExpDate();
-
-
   }
+
+
 
   ngOnDestroy(): void {
     this.inactivityService.stopMonitoring();
@@ -35,18 +35,13 @@ export class AppComponent implements OnInit, OnDestroy {
 
   triggerExpDate(): void{
 
-
     // Handle token refresh on activity
     AuthService.activitySubject.pipe(
       debounceTime(500), // Debounce rapid events
-      // distinctUntilChanged(), // Avoid duplicate events
       switchMap(() =>
         this.store.select(selectIsAuthenticated).pipe(
           filter(isAuthenticated => isAuthenticated), // Only proceed if authenticated
-          // switchMap(() => this.authService.aboutToExpireFunction()),
           switchMap(()=> this.authService.getAuthStatus())
-          // filter(aboutToExpire => aboutToExpire), // Only proceed if token is about to expire
-          // switchMap(() => this.authService.refreshToken())
         )
       ),
       takeUntil(this.destroy$)
@@ -76,14 +71,5 @@ export class AppComponent implements OnInit, OnDestroy {
   onUserActivity(): void {
     AuthService.activitySubject.next();
   }
-
-
-
-
-
-
-
-
-
-
+  
 }
