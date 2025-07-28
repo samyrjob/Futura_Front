@@ -18,3 +18,8 @@ export const selectUsername = createSelector(
   selectAuthState,
   (state: AuthState) => state.user?.username ?? null
 );
+
+export const selectHasEnteredWorld = createSelector(
+  selectAuthState,
+  (auth: AuthState) => auth.hasEnteredWorld
+);

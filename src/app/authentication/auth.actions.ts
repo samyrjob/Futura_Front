@@ -16,5 +16,11 @@ export const loginFailure = createAction(
   props<{ error: any }>()
 );
 
+export const enterVirtualWorld = createAction(
+  '[Auth] Enter Virtual World');
+
+export const exitVirtualWorld = createAction(
+  '[Auth] Exit Virtual World');
+
 export const logout = createAction('[Auth] Logout');
 
