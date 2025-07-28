@@ -4,9 +4,9 @@ import { ApiService } from '../shared/api.service';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { logout } from '../authentication/auth.actions';
+import { enterVirtualWorld, logout } from '../authentication/auth.actions';
 import { Observable } from 'rxjs';
-import { selectIsAuthenticated, selectUsername } from '../authentication/auth.selectors';
+import { selectHasEnteredWorld, selectIsAuthenticated, selectUsername } from '../authentication/auth.selectors';
 import { AuthService } from '../shared/auth.service';
 
 
@@ -31,14 +31,16 @@ export class ProfileComponent implements OnInit, OnDestroy{
   
   isAuthenticated$: Observable<boolean>;
   username$: Observable<string | null>;
+  hasEnteredWorld$: Observable<boolean>;
+ 
 
   constructor(private apiService: ApiService, private router: Router, private store: Store<AppState>, private authService: AuthService, @Inject(PLATFORM_ID) private platformId: Object) {
 
     this.isAuthenticated$ = this.store.select(selectIsAuthenticated);
     this.username$ = this.store.select(selectUsername);
+    this.hasEnteredWorld$ = this.store.select(selectHasEnteredWorld);
     
   }
-
   
   ngOnInit(): void {
 
@@ -58,8 +60,15 @@ export class ProfileComponent implements OnInit, OnDestroy{
 
         window.addEventListener('storage', this.storageEventListener);
       }
-    
+
+      // 🔥 Subscribe to username observable and assign to the variable
+      this.username$.subscribe(username => {
+        this.username = username;
+        console.log("Fetched username:", this.username); // Optional debug
+      });
+        
   }
+  
 
   ngOnDestroy(): void {
 
@@ -86,6 +95,13 @@ export class ProfileComponent implements OnInit, OnDestroy{
     this.store.dispatch(logout());
     
   }
+
+  launchVirtualWorld() {
+  this.store.dispatch(enterVirtualWorld());
+
+  // Launch your futura://... protocol too
+  window.location.href = `futura://?user=${this.username}&gender=female`;
+}
 
 }
 
