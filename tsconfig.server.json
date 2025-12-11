@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+      "outDir": "./out-tsc/app-server",
+      "module": "Preserve",  // 🔥 
+      "target": "es2015",
+      "types": ["node"]
+    },
+    "files": ["src/main.server.ts"]
+  }
+  
+  

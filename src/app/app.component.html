@@ -1,0 +1,18 @@
+<main class="main">
+  <div class="content">
+     <div class="container">
+        <div>
+          <!-- <ng-container *ngIf = "isAuthenticated$ | async; else loggedOutContent" >
+            <h3>Welcome back <strong>{{username$ | async}} </strong></h3>
+            <button (click)="logoutUser()">Log out</button>
+          </ng-container>
+          <ng-template #loggedOutContent>
+            <h3>You are not logged in</h3>
+            <button (click)="loginUser()">Log in </button>
+          </ng-template> -->
+        </div>
+        <router-outlet></router-outlet>
+     </div>
+  </div>
+</main>
+
