@@ -8,6 +8,7 @@ import { enterVirtualWorld, logout } from '../authentication/auth.actions';
 import { Observable } from 'rxjs';
 import { selectHasEnteredWorld, selectIsAuthenticated, selectUsername } from '../authentication/auth.selectors';
 import { AuthService } from '../shared/auth.service';
+import { HttpClient } from '@angular/common/http';  // ✅ ADD THIS IMPORT
 
 
 @Component({
@@ -28,13 +29,21 @@ export class ProfileComponent implements OnInit, OnDestroy{
 
   username: any;
   message: string='';
+  isLaunching: boolean = false;  // ✅ ADD THIS - For loading state
   
   isAuthenticated$: Observable<boolean>;
   username$: Observable<string | null>;
   hasEnteredWorld$: Observable<boolean>;
  
 
-  constructor(private apiService: ApiService, private router: Router, private store: Store<AppState>, private authService: AuthService, @Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(
+    private apiService: ApiService, 
+    private router: Router, 
+    private store: Store<AppState>, 
+    private authService: AuthService, 
+    private http: HttpClient,  // ✅ ADD THIS
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
 
     this.isAuthenticated$ = this.store.select(selectIsAuthenticated);
     this.username$ = this.store.select(selectUsername);
@@ -96,22 +105,54 @@ export class ProfileComponent implements OnInit, OnDestroy{
     
   }
 
-  // ✅ UPDATED METHOD
+  // ✅ NEW SECURE METHOD WITH SSO TOKEN
   launchVirtualWorld(): void {
-    this.store.dispatch(enterVirtualWorld());
-
-    // ✅ Fixed URL format: futura://open?user=...&gender=...
-    const params = new URLSearchParams({
-      user: this.username || 'Guest',
-      gender: 'female'  // TODO: Get this from user profile if available
-    });
-
-    const futuraUrl = `futura://open?${params.toString()}`;
+    // Prevent double-clicking
+    if (this.isLaunching) {
+      return;
+    }
     
-    console.log('Launching Futura:', futuraUrl);
-    // Example output: futura://open?user=PlayerOne&gender=female
+    this.isLaunching = true;
+    console.log('Requesting SSO token...');
 
-    window.location.href = futuraUrl;
+    // Step 1: Request SSO token from backend (JWT is sent automatically via cookie)
+    this.http.post<{ ssoToken: string }>(
+      'http://localhost:9090/api/sso/generate', 
+      {},
+      { withCredentials: true }  // ✅ Important: Send JWT cookie!
+    ).subscribe({
+      next: (response) => {
+        const ssoToken = response.ssoToken;
+        console.log('Got SSO token:', ssoToken);
+        
+        // Step 2: Dispatch action to update state
+        this.store.dispatch(enterVirtualWorld());
+        
+        // Step 3: Launch with SSO TOKEN (secure!)
+        const futuraUrl = `futura://open?token=${ssoToken}`;
+        console.log('Launching Futura:', futuraUrl);
+        
+        // Step 4: Open the game
+        window.location.href = futuraUrl;
+        
+        // Reset launching state after a delay
+        setTimeout(() => {
+          this.isLaunching = false;
+        }, 2000);
+      },
+      error: (err) => {
+        console.error('Failed to get SSO token:', err);
+        this.isLaunching = false;
+        
+        // Show user-friendly error
+        if (err.status === 401) {
+          alert('Session expired. Please log in again.');
+          this.router.navigate(['/sign_in']);
+        } else {
+          alert('Failed to launch game. Please try again.');
+        }
+      }
+    });
   }
 
 }
