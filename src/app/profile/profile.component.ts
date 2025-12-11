@@ -96,12 +96,22 @@ export class ProfileComponent implements OnInit, OnDestroy{
     
   }
 
-  launchVirtualWorld() {
-  this.store.dispatch(enterVirtualWorld());
+  // ✅ UPDATED METHOD
+  launchVirtualWorld(): void {
+    this.store.dispatch(enterVirtualWorld());
 
-  // Launch your futura://... protocol too
-  window.location.href = `futura://?user=${this.username}&gender=female`;
+    // ✅ Fixed URL format: futura://open?user=...&gender=...
+    const params = new URLSearchParams({
+      user: this.username || 'Guest',
+      gender: 'female'  // TODO: Get this from user profile if available
+    });
+
+    const futuraUrl = `futura://open?${params.toString()}`;
+    
+    console.log('Launching Futura:', futuraUrl);
+    // Example output: futura://open?user=PlayerOne&gender=female
+
+    window.location.href = futuraUrl;
+  }
+
 }
-
-}
-

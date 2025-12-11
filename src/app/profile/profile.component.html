@@ -10,12 +10,19 @@
     <br><br>
     <h3>Disconnect : </h3> 
     <button (click)="logout()">Log Out button</button>
+    
+    <!-- ✅ FIXED: Separated the download link and launch button -->
     <a href="Downloads/Futura_curly-1.0.msi" download="Futura_curly-1.0.msi">
       <button style="padding: 15px 30px; font-size: 1.2em; cursor: pointer;">
           Download Game (Windows)
       </button>
-    <button (click)="launchVirtualWorld()">Launch the game !</button>
-  </a>
+    </a>
+    
+    <!-- ✅ Launch button is now OUTSIDE the <a> tag -->
+    <button (click)="launchVirtualWorld()" style="padding: 15px 30px; font-size: 1.2em; cursor: pointer;">
+      🚀 Launch the game!
+    </button>
+    
   </div>
 </div>
 
