@@ -1,8 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { RoomDTO, RoomType } from '../../model/RoomDTO';
+// import { RoomEventDTO, RoomEventType } from '../../model/RoomEventDTO';
 import { RoomService } from '../../services/room.service';
 import { WebSocketService } from '../../services/websocket.service';
 
@@ -15,8 +16,11 @@ import { WebSocketService } from '../../services/websocket.service';
 })
 export class RoomNavigatorComponent implements OnInit, OnDestroy {
 
+  // ✅ ADD THIS - Output event for parent component
+  @Output() closeEvent = new EventEmitter<void>();
+
   // UI State
-  isVisible = false;
+  isVisible = true;  // ✅ CHANGED to true (parent controls visibility)
   currentTab: 'public' | 'my' | 'favorites' = 'public';
   isLoading = false;
   isConnected = false;
@@ -43,6 +47,9 @@ export class RoomNavigatorComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
+    // Load rooms immediately
+    this.loadRooms();
+
     // Subscribe to room lists
     this.subscriptions.push(
       this.roomService.getPublicRooms$().subscribe(rooms => {
@@ -73,20 +80,8 @@ export class RoomNavigatorComponent implements OnInit, OnDestroy {
   // VISIBILITY
   // ═══════════════════════════════════════════════════════════
 
-  toggle(): void {
-    this.isVisible = !this.isVisible;
-    if (this.isVisible) {
-      this.loadRooms();
-    }
-  }
-
-  open(): void {
-    this.isVisible = true;
-    this.loadRooms();
-  }
-
   close(): void {
-    this.isVisible = false;
+    this.closeEvent.emit();  // ✅ Emit event to parent
   }
 
   // ═══════════════════════════════════════════════════════════
@@ -131,7 +126,7 @@ export class RoomNavigatorComponent implements OnInit, OnDestroy {
       case 'my':
         return this.myRooms;
       case 'favorites':
-        return []; // TODO: Implement favorites
+        return [];
       default:
         return this.publicRooms;
     }
@@ -161,7 +156,7 @@ export class RoomNavigatorComponent implements OnInit, OnDestroy {
       next: (room) => {
         console.log('[ROOM NAV] Room created:', room.roomName);
         this.closeCreateModal();
-        this.setTab('my'); // Switch to My Rooms tab
+        this.setTab('my');
       },
       error: (err) => {
         console.error('[ROOM NAV] Failed to create room:', err);
@@ -186,7 +181,6 @@ export class RoomNavigatorComponent implements OnInit, OnDestroy {
       next: (response) => {
         console.log('[ROOM NAV] Entered room:', room.roomName);
         this.close();
-        // TODO: Navigate to game view or emit event
       },
       error: (err) => {
         console.error('[ROOM NAV] Failed to enter room:', err);
