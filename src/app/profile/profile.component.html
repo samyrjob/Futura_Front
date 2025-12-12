@@ -1,7 +1,6 @@
 <br><br><br><br><br><br><br><br><br>
 <p>profile works and Registration succeeded!</p>
 
-
 <div *ngIf="isAuthenticated$ | async">
   <div *ngIf="username$ | async as username">
     <h3>Hello {{ username }}</h3>
@@ -11,16 +10,28 @@
     <h3>Disconnect : </h3> 
     <button (click)="logout()">Log Out button</button>
     
-    <!-- ✅ FIXED: Separated the download link and launch button -->
+    <!-- Download Game Button -->
     <a href="Downloads/Futura_curly-1.0.msi" download="Futura_curly-1.0.msi">
       <button style="padding: 15px 30px; font-size: 1.2em; cursor: pointer;">
-          Download Game (Windows)
+        Download Game (Windows)
       </button>
     </a>
     
-    <!-- ✅ Launch button is now OUTSIDE the <a> tag -->
-    <button (click)="launchVirtualWorld()" style="padding: 15px 30px; font-size: 1.2em; cursor: pointer;">
-      🚀 Launch the game!
+    <!-- Launch Game Button -->
+    <button 
+      (click)="launchVirtualWorld()" 
+      [disabled]="isLaunching"
+      style="padding: 15px 30px; font-size: 1.2em; cursor: pointer;">
+      {{ isLaunching ? '⏳ Launching...' : '🚀 Launch the game!' }}
+    </button>
+
+    <br><br>
+
+    <!-- ✅ ROOM NAVIGATOR BUTTON -->
+    <button 
+      class="room-navigator-btn" 
+      (click)="openRoomNavigator()">
+      🏠 Room Navigator
     </button>
     
   </div>
@@ -31,5 +42,12 @@
   <p>Welcome to the virtual world!</p>
 </div>
 <br><br><br><br><br>
+
 <!-- About link -->
 <a routerLink="/about">About</a>
+
+<!-- ✅ ROOM NAVIGATOR COMPONENT (note: closeEvent not close!) -->
+<app-room-navigator 
+  *ngIf="showRoomNavigator"
+  (closeEvent)="closeRoomNavigator()">
+</app-room-navigator>

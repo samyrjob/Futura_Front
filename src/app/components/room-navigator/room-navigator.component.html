@@ -1,0 +1,118 @@
+<!-- Room Navigator Modal -->
+<div class="room-navigator-overlay" *ngIf="isVisible" (click)="close()">
+  <div class="room-navigator" (click)="$event.stopPropagation()">
+    
+    <!-- Header -->
+    <div class="navigator-header">
+      <h2>🏠 Room Navigator</h2>
+      <div class="connection-status" [class.connected]="isConnected">
+        {{ isConnected ? '🟢 Live' : '🔴 Offline' }}
+      </div>
+      <button class="close-btn" (click)="close()">✕</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button 
+        class="tab" 
+        [class.active]="currentTab === 'public'"
+        (click)="setTab('public')">
+        🌐 Public Rooms
+      </button>
+      <button 
+        class="tab" 
+        [class.active]="currentTab === 'my'"
+        (click)="setTab('my')">
+        🏠 My Rooms
+      </button>
+      <button 
+        class="tab" 
+        [class.active]="currentTab === 'favorites'"
+        (click)="setTab('favorites')">
+        ⭐ Favorites
+      </button>
+    </div>
+
+    <!-- Room List -->
+    <div class="room-list">
+      <!-- Loading -->
+      <div class="loading" *ngIf="isLoading">
+        Loading rooms...
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" *ngIf="!isLoading && currentRooms.length === 0">
+        <div class="empty-icon">🏠</div>
+        <p *ngIf="currentTab === 'public'">No public rooms available</p>
+        <p *ngIf="currentTab === 'my'">You haven't created any rooms yet</p>
+        <p *ngIf="currentTab === 'favorites'">No favorite rooms yet</p>
+      </div>
+
+      <!-- Room Items -->
+      <div 
+        class="room-item" 
+        *ngFor="let room of currentRooms"
+        (click)="enterRoom(room)">
+        
+        <div class="room-icon">{{ getRoomTypeIcon(room.roomType) }}</div>
+        
+        <div class="room-info">
+          <div class="room-name">{{ room.roomName }}</div>
+          <div class="room-owner">by {{ room.ownerUsername }}</div>
+        </div>
+
+        <div class="room-meta">
+          <div class="player-count">👥 {{ room.currentPlayerCount }}</div>
+          <div class="room-type">{{ room.roomType }}</div>
+        </div>
+
+        <!-- Delete button (only for my rooms) -->
+        <button 
+          class="delete-btn" 
+          *ngIf="currentTab === 'my'"
+          (click)="deleteRoom(room, $event)">
+          🗑️
+        </button>
+      </div>
+    </div>
+
+    <!-- Create Room Button -->
+    <div class="navigator-footer">
+      <button class="create-btn" (click)="openCreateModal()">
+        + Create Room
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Create Room Modal -->
+<div class="modal-overlay" *ngIf="showCreateModal" (click)="closeCreateModal()">
+  <div class="modal" (click)="$event.stopPropagation()">
+    <h3>Create New Room</h3>
+    <input 
+      type="text" 
+      [(ngModel)]="newRoomName" 
+      placeholder="Enter room name..."
+      (keyup.enter)="createRoom()">
+    <div class="modal-buttons">
+      <button class="cancel-btn" (click)="closeCreateModal()">Cancel</button>
+      <button class="confirm-btn" (click)="createRoom()">Create</button>
+    </div>
+  </div>
+</div>
+
+<!-- Password Modal -->
+<div class="modal-overlay" *ngIf="showPasswordModal" (click)="closePasswordModal()">
+  <div class="modal" (click)="$event.stopPropagation()">
+    <h3>🔑 Enter Password</h3>
+    <input 
+      type="password" 
+      [(ngModel)]="passwordInput" 
+      placeholder="Room password..."
+      (keyup.enter)="submitPassword()">
+    <div class="modal-buttons">
+      <button class="cancel-btn" (click)="closePasswordModal()">Cancel</button>
+      <button class="confirm-btn" (click)="submitPassword()">Enter</button>
+    </div>
+  </div>
+</div>
