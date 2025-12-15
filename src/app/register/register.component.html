@@ -1,4 +1,4 @@
-<p>REGISTER NOW!</p>
+<!-- <p>REGISTER NOW!</p>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <label for="username">Username</label>
     <input id="username" formControlName="username" type="text">
@@ -28,4 +28,60 @@
 
     <div *ngIf="errorMessage"> {{errorMessage}}</div>
   </form>
-  
+   -->
+
+   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <p>REGISTER NOW!</p>
+
+  <!-- Username Field -->
+  <label for="username">Username</label>
+  <input 
+    id="username" 
+    formControlName="username" 
+    type="text"
+    placeholder="Choose a cool username">
+  <div *ngIf="registerForm.controls['username'].invalid && registerForm.controls['username'].touched">
+    Username is required and must be at least 3 characters.
+  </div>
+
+  <!-- Email Field -->
+  <label for="email">Email</label>
+  <input 
+    id="email" 
+    formControlName="email" 
+    type="email"
+    placeholder="your.email@habbo.com">
+  <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched">
+    Enter a valid email.
+  </div>
+
+  <!-- Password Field -->
+  <label for="password">Password</label>
+  <input 
+    id="password" 
+    formControlName="password" 
+    type="password"
+    placeholder="Super secret password">
+  <div *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched">
+    Password must be at least 6 characters.
+  </div>
+
+  <!-- Confirm Password Field -->
+  <label for="confirmPassword">Confirm Password</label>
+  <input 
+    id="confirmPassword" 
+    formControlName="confirmPassword" 
+    type="password"
+    placeholder="Type it again">
+  <div *ngIf="registerForm.hasError('mismatch') && registerForm.controls['confirmPassword'].touched">
+    Passwords do not match.
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" [disabled]="registerForm.invalid">
+    🚀 Join Habbo!
+  </button>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="error-message">{{errorMessage}}</div>
+</form>
